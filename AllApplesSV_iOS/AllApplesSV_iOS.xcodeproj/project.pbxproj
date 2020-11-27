@@ -11,13 +11,13 @@
 		A90A46A22571A9AC00045CA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A46A12571A9AC00045CA5 /* SceneDelegate.swift */; };
 		A90A46A92571A9B000045CA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90A46A82571A9B000045CA5 /* Assets.xcassets */; };
 		A90A46AC2571A9B000045CA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90A46AA2571A9B000045CA5 /* LaunchScreen.storyboard */; };
-		A90A46B62571A9E500045CA5 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A90A46B52571A9E500045CA5 /* AllApples */; };
 		A90A46BF2571AA1400045CA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A46BE2571AA1400045CA5 /* AppDelegate.swift */; };
 		A90A46C32571AA1600045CA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90A46C22571AA1600045CA5 /* Assets.xcassets */; };
-		A90A46D02571AA2200045CA5 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A90A46CF2571AA2200045CA5 /* AllApples */; };
 		A90A46D62571AAF300045CA5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A46D52571AAF300045CA5 /* main.swift */; };
 		A90A46E92571B05700045CA5 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A46E82571B05700045CA5 /* CommonViewController.swift */; };
 		A90A46EC2571B07200045CA5 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A46E82571B05700045CA5 /* CommonViewController.swift */; };
+		A90A47022571BDE400045CA5 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A90A47012571BDE400045CA5 /* AllApples */; };
+		A90A47062571BDF100045CA5 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A90A47052571BDF100045CA5 /* AllApples */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A90A46B62571A9E500045CA5 /* AllApples in Frameworks */,
+				A90A47022571BDE400045CA5 /* AllApples in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A90A46D02571AA2200045CA5 /* AllApples in Frameworks */,
+				A90A47062571BDF100045CA5 /* AllApples in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +124,7 @@
 			);
 			name = AllApplesSV_iOS;
 			packageProductDependencies = (
-				A90A46B52571A9E500045CA5 /* AllApples */,
+				A90A47012571BDE400045CA5 /* AllApples */,
 			);
 			productName = AllApplesSV_iOS;
 			productReference = A90A469C2571A9AC00045CA5 /* AllApplesSV_iOS.app */;
@@ -144,7 +144,7 @@
 			);
 			name = AllApplesSV_Mac;
 			packageProductDependencies = (
-				A90A46CF2571AA2200045CA5 /* AllApples */,
+				A90A47052571BDF100045CA5 /* AllApples */,
 			);
 			productName = AllApplesSV_Mac;
 			productReference = A90A46BC2571AA1400045CA5 /* AllApplesSV_Mac.app */;
@@ -177,7 +177,7 @@
 			);
 			mainGroup = A90A46932571A9AC00045CA5;
 			packageReferences = (
-				A90A46B42571A9E500045CA5 /* XCRemoteSwiftPackageReference "allapples" */,
+				A90A47002571BDE400045CA5 /* XCRemoteSwiftPackageReference "allapples" */,
 			);
 			productRefGroup = A90A469D2571A9AC00045CA5 /* Products */;
 			projectDirPath = "";
@@ -477,25 +477,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A90A46B42571A9E500045CA5 /* XCRemoteSwiftPackageReference "allapples" */ = {
+		A90A47002571BDE400045CA5 /* XCRemoteSwiftPackageReference "allapples" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mihaelamj/allapples";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.0;
+				minimumVersion = 0.4.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A90A46B52571A9E500045CA5 /* AllApples */ = {
+		A90A47012571BDE400045CA5 /* AllApples */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A90A46B42571A9E500045CA5 /* XCRemoteSwiftPackageReference "allapples" */;
+			package = A90A47002571BDE400045CA5 /* XCRemoteSwiftPackageReference "allapples" */;
 			productName = AllApples;
 		};
-		A90A46CF2571AA2200045CA5 /* AllApples */ = {
+		A90A47052571BDF100045CA5 /* AllApples */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A90A46B42571A9E500045CA5 /* XCRemoteSwiftPackageReference "allapples" */;
+			package = A90A47002571BDE400045CA5 /* XCRemoteSwiftPackageReference "allapples" */;
 			productName = AllApples;
 		};
 /* End XCSwiftPackageProductDependency section */
