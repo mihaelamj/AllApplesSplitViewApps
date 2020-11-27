@@ -18,7 +18,7 @@ class ViewController: NSViewController {
   }
   
   override func loadView() {
-    let aView = AView(frame: NSRect(x: 0, y: 0, width: 300, height: 300))
+    let aView = AView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
     aView.wantsLayer = true
     aView.myColor = AColor.red
     self.view = aView
