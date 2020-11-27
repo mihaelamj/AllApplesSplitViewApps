@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
     guard let aScene = (scene as? UIWindowScene) else { return }
-    window = AppSceneDelegate.makeSplitViewWindow_iOS(theScene: aScene, theVC: ViewController())
+    window = AppSceneDelegate.makeSplitViewWindow_iOS(theScene: aScene, theVC: CommonViewController())
   }
 
 }

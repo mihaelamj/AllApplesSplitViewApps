@@ -9,32 +9,31 @@
 /* Begin PBXBuildFile section */
 		A90A46A02571A9AC00045CA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A469F2571A9AC00045CA5 /* AppDelegate.swift */; };
 		A90A46A22571A9AC00045CA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A46A12571A9AC00045CA5 /* SceneDelegate.swift */; };
-		A90A46A42571A9AC00045CA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A46A32571A9AC00045CA5 /* ViewController.swift */; };
 		A90A46A92571A9B000045CA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90A46A82571A9B000045CA5 /* Assets.xcassets */; };
 		A90A46AC2571A9B000045CA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90A46AA2571A9B000045CA5 /* LaunchScreen.storyboard */; };
 		A90A46B62571A9E500045CA5 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A90A46B52571A9E500045CA5 /* AllApples */; };
 		A90A46BF2571AA1400045CA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A46BE2571AA1400045CA5 /* AppDelegate.swift */; };
-		A90A46C12571AA1400045CA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A46C02571AA1400045CA5 /* ViewController.swift */; };
 		A90A46C32571AA1600045CA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90A46C22571AA1600045CA5 /* Assets.xcassets */; };
 		A90A46D02571AA2200045CA5 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A90A46CF2571AA2200045CA5 /* AllApples */; };
 		A90A46D62571AAF300045CA5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A46D52571AAF300045CA5 /* main.swift */; };
+		A90A46E92571B05700045CA5 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A46E82571B05700045CA5 /* CommonViewController.swift */; };
+		A90A46EC2571B07200045CA5 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A46E82571B05700045CA5 /* CommonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A90A469C2571A9AC00045CA5 /* AllApplesSV_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllApplesSV_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90A469F2571A9AC00045CA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A90A46A12571A9AC00045CA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A90A46A32571A9AC00045CA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A90A46A82571A9B000045CA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A90A46AB2571A9B000045CA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A90A46AD2571A9B000045CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A90A46BC2571AA1400045CA5 /* AllApplesSV_Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllApplesSV_Mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90A46BE2571AA1400045CA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A90A46C02571AA1400045CA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A90A46C22571AA1600045CA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A90A46C72571AA1600045CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A90A46C82571AA1600045CA5 /* AllApplesSV_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AllApplesSV_Mac.entitlements; sourceTree = "<group>"; };
 		A90A46D52571AAF300045CA5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A90A46E82571B05700045CA5 /* CommonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +59,7 @@
 		A90A46932571A9AC00045CA5 = {
 			isa = PBXGroup;
 			children = (
+				A90A46E82571B05700045CA5 /* CommonViewController.swift */,
 				A90A469E2571A9AC00045CA5 /* AllApplesSV_iOS */,
 				A90A46BD2571AA1400045CA5 /* AllApplesSV_Mac */,
 				A90A469D2571A9AC00045CA5 /* Products */,
@@ -81,7 +81,6 @@
 			children = (
 				A90A469F2571A9AC00045CA5 /* AppDelegate.swift */,
 				A90A46A12571A9AC00045CA5 /* SceneDelegate.swift */,
-				A90A46A32571A9AC00045CA5 /* ViewController.swift */,
 				A90A46A82571A9B000045CA5 /* Assets.xcassets */,
 				A90A46AA2571A9B000045CA5 /* LaunchScreen.storyboard */,
 				A90A46AD2571A9B000045CA5 /* Info.plist */,
@@ -94,7 +93,6 @@
 			children = (
 				A90A46D52571AAF300045CA5 /* main.swift */,
 				A90A46BE2571AA1400045CA5 /* AppDelegate.swift */,
-				A90A46C02571AA1400045CA5 /* ViewController.swift */,
 				A90A46C22571AA1600045CA5 /* Assets.xcassets */,
 				A90A46C72571AA1600045CA5 /* Info.plist */,
 				A90A46C82571AA1600045CA5 /* AllApplesSV_Mac.entitlements */,
@@ -216,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A90A46A42571A9AC00045CA5 /* ViewController.swift in Sources */,
+				A90A46E92571B05700045CA5 /* CommonViewController.swift in Sources */,
 				A90A46A02571A9AC00045CA5 /* AppDelegate.swift in Sources */,
 				A90A46A22571A9AC00045CA5 /* SceneDelegate.swift in Sources */,
 			);
@@ -226,7 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A90A46C12571AA1400045CA5 /* ViewController.swift in Sources */,
+				A90A46EC2571B07200045CA5 /* CommonViewController.swift in Sources */,
 				A90A46BF2571AA1400045CA5 /* AppDelegate.swift in Sources */,
 				A90A46D62571AAF300045CA5 /* main.swift in Sources */,
 			);

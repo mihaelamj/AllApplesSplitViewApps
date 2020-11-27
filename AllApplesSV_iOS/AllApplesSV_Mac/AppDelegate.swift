@@ -13,7 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   private var window: NSWindow?
   
   func applicationDidFinishLaunching(_ aNotification: Notification) {
-    window = AppSceneDelegate.makeSplitViewWindow_Mac(theVC: ViewController())
+    window = AppSceneDelegate.makeSplitViewWindow_Mac(theVC: CommonViewController())
   }
 
 }
