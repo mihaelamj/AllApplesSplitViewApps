@@ -18,10 +18,26 @@
 		A90A46EC2571B07200045CA5 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A46E82571B05700045CA5 /* CommonViewController.swift */; };
 		A90A471D257283DE00045CA5 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A90A471C257283DE00045CA5 /* AllApples */; };
 		A90A4721257283ED00045CA5 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A90A4720257283ED00045CA5 /* AllApples */; };
+		A9FCC3232645751D00BDF73F /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3222645751D00BDF73F /* MainSplitViewController.swift */; };
+		A9FCC3242645751D00BDF73F /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3222645751D00BDF73F /* MainSplitViewController.swift */; };
+		A9FCC3262645753400BDF73F /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3252645753400BDF73F /* MainTableViewController.swift */; };
+		A9FCC3272645753400BDF73F /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3252645753400BDF73F /* MainTableViewController.swift */; };
+		A9FCC3292645754100BDF73F /* MainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3282645754100BDF73F /* MainDetailViewController.swift */; };
+		A9FCC32A2645754100BDF73F /* MainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3282645754100BDF73F /* MainDetailViewController.swift */; };
+		A9FCC32C2645768600BDF73F /* SectionedProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC32B2645768600BDF73F /* SectionedProtocols.swift */; };
+		A9FCC32D2645768600BDF73F /* SectionedProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC32B2645768600BDF73F /* SectionedProtocols.swift */; };
+		A9FCC3322645770F00BDF73F /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3312645770F00BDF73F /* Collection+Safe.swift */; };
+		A9FCC3332645770F00BDF73F /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3312645770F00BDF73F /* Collection+Safe.swift */; };
+		A9FCC3382645785200BDF73F /* TableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3372645785200BDF73F /* TableViewCellProtocol.swift */; };
+		A9FCC3392645785200BDF73F /* TableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3372645785200BDF73F /* TableViewCellProtocol.swift */; };
+		A9FCC33B26457B2300BDF73F /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC33A26457B2300BDF73F /* DataHandler.swift */; };
+		A9FCC33C26457B2300BDF73F /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC33A26457B2300BDF73F /* DataHandler.swift */; };
+		A9FCC33E2645A60200BDF73F /* ItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC33D2645A60200BDF73F /* ItemDelegate.swift */; };
+		A9FCC33F2645A60200BDF73F /* ItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC33D2645A60200BDF73F /* ItemDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A90A469C2571A9AC00045CA5 /* AllApplesSV_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllApplesSV_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90A469C2571A9AC00045CA5 /* AllApplesSV_Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllApplesSV_Mobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90A469F2571A9AC00045CA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A90A46A12571A9AC00045CA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A90A46A82571A9B000045CA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +50,14 @@
 		A90A46C82571AA1600045CA5 /* AllApplesSV_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AllApplesSV_Mac.entitlements; sourceTree = "<group>"; };
 		A90A46D52571AAF300045CA5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A90A46E82571B05700045CA5 /* CommonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
+		A9FCC3222645751D00BDF73F /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
+		A9FCC3252645753400BDF73F /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		A9FCC3282645754100BDF73F /* MainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailViewController.swift; sourceTree = "<group>"; };
+		A9FCC32B2645768600BDF73F /* SectionedProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionedProtocols.swift; sourceTree = "<group>"; };
+		A9FCC3312645770F00BDF73F /* Collection+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Safe.swift"; sourceTree = "<group>"; };
+		A9FCC3372645785200BDF73F /* TableViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellProtocol.swift; sourceTree = "<group>"; };
+		A9FCC33A26457B2300BDF73F /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
+		A9FCC33D2645A60200BDF73F /* ItemDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +83,9 @@
 		A90A46932571A9AC00045CA5 = {
 			isa = PBXGroup;
 			children = (
-				A90A46E82571B05700045CA5 /* CommonViewController.swift */,
+				A9FCC3352645774000BDF73F /* UI */,
+				A9FCC3342645772C00BDF73F /* Util */,
+				A9FCC3362645775700BDF73F /* DataProtocols */,
 				A90A469E2571A9AC00045CA5 /* AllApplesSV_iOS */,
 				A90A46BD2571AA1400045CA5 /* AllApplesSV_Mac */,
 				A90A469D2571A9AC00045CA5 /* Products */,
@@ -70,7 +96,7 @@
 		A90A469D2571A9AC00045CA5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A90A469C2571A9AC00045CA5 /* AllApplesSV_iOS.app */,
+				A90A469C2571A9AC00045CA5 /* AllApplesSV_Mobile.app */,
 				A90A46BC2571AA1400045CA5 /* AllApplesSV_Mac.app */,
 			);
 			name = Products;
@@ -107,12 +133,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A9FCC3342645772C00BDF73F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A9FCC3312645770F00BDF73F /* Collection+Safe.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A9FCC3352645774000BDF73F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A90A46E82571B05700045CA5 /* CommonViewController.swift */,
+				A9FCC3222645751D00BDF73F /* MainSplitViewController.swift */,
+				A9FCC3252645753400BDF73F /* MainTableViewController.swift */,
+				A9FCC3282645754100BDF73F /* MainDetailViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A9FCC3362645775700BDF73F /* DataProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				A9FCC33A26457B2300BDF73F /* DataHandler.swift */,
+				A9FCC3372645785200BDF73F /* TableViewCellProtocol.swift */,
+				A9FCC32B2645768600BDF73F /* SectionedProtocols.swift */,
+				A9FCC33D2645A60200BDF73F /* ItemDelegate.swift */,
+			);
+			path = DataProtocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A90A469B2571A9AC00045CA5 /* AllApplesSV_iOS */ = {
+		A90A469B2571A9AC00045CA5 /* AllApplesSV_Mobile */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A90A46B02571A9B000045CA5 /* Build configuration list for PBXNativeTarget "AllApplesSV_iOS" */;
+			buildConfigurationList = A90A46B02571A9B000045CA5 /* Build configuration list for PBXNativeTarget "AllApplesSV_Mobile" */;
 			buildPhases = (
 				A90A46982571A9AC00045CA5 /* Sources */,
 				A90A46992571A9AC00045CA5 /* Frameworks */,
@@ -122,12 +178,12 @@
 			);
 			dependencies = (
 			);
-			name = AllApplesSV_iOS;
+			name = AllApplesSV_Mobile;
 			packageProductDependencies = (
 				A90A471C257283DE00045CA5 /* AllApples */,
 			);
 			productName = AllApplesSV_iOS;
-			productReference = A90A469C2571A9AC00045CA5 /* AllApplesSV_iOS.app */;
+			productReference = A90A469C2571A9AC00045CA5 /* AllApplesSV_Mobile.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A90A46BB2571AA1400045CA5 /* AllApplesSV_Mac */ = {
@@ -167,7 +223,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A90A46972571A9AC00045CA5 /* Build configuration list for PBXProject "AllApplesSV_iOS" */;
+			buildConfigurationList = A90A46972571A9AC00045CA5 /* Build configuration list for PBXProject "AllApplesSV" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -183,7 +239,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A90A469B2571A9AC00045CA5 /* AllApplesSV_iOS */,
+				A90A469B2571A9AC00045CA5 /* AllApplesSV_Mobile */,
 				A90A46BB2571AA1400045CA5 /* AllApplesSV_Mac */,
 			);
 		};
@@ -214,9 +270,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9FCC3292645754100BDF73F /* MainDetailViewController.swift in Sources */,
+				A9FCC3382645785200BDF73F /* TableViewCellProtocol.swift in Sources */,
 				A90A46E92571B05700045CA5 /* CommonViewController.swift in Sources */,
+				A9FCC33E2645A60200BDF73F /* ItemDelegate.swift in Sources */,
 				A90A46A02571A9AC00045CA5 /* AppDelegate.swift in Sources */,
 				A90A46A22571A9AC00045CA5 /* SceneDelegate.swift in Sources */,
+				A9FCC3262645753400BDF73F /* MainTableViewController.swift in Sources */,
+				A9FCC33B26457B2300BDF73F /* DataHandler.swift in Sources */,
+				A9FCC3322645770F00BDF73F /* Collection+Safe.swift in Sources */,
+				A9FCC32C2645768600BDF73F /* SectionedProtocols.swift in Sources */,
+				A9FCC3232645751D00BDF73F /* MainSplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,9 +288,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9FCC32A2645754100BDF73F /* MainDetailViewController.swift in Sources */,
+				A9FCC3392645785200BDF73F /* TableViewCellProtocol.swift in Sources */,
 				A90A46EC2571B07200045CA5 /* CommonViewController.swift in Sources */,
+				A9FCC33F2645A60200BDF73F /* ItemDelegate.swift in Sources */,
 				A90A46BF2571AA1400045CA5 /* AppDelegate.swift in Sources */,
 				A90A46D62571AAF300045CA5 /* main.swift in Sources */,
+				A9FCC3272645753400BDF73F /* MainTableViewController.swift in Sources */,
+				A9FCC33C26457B2300BDF73F /* DataHandler.swift in Sources */,
+				A9FCC3332645770F00BDF73F /* Collection+Safe.swift in Sources */,
+				A9FCC32D2645768600BDF73F /* SectionedProtocols.swift in Sources */,
+				A9FCC3242645751D00BDF73F /* MainSplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +519,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A90A46972571A9AC00045CA5 /* Build configuration list for PBXProject "AllApplesSV_iOS" */ = {
+		A90A46972571A9AC00045CA5 /* Build configuration list for PBXProject "AllApplesSV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A90A46AE2571A9B000045CA5 /* Debug */,
@@ -456,7 +528,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A90A46B02571A9B000045CA5 /* Build configuration list for PBXNativeTarget "AllApplesSV_iOS" */ = {
+		A90A46B02571A9B000045CA5 /* Build configuration list for PBXNativeTarget "AllApplesSV_Mobile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A90A46B12571A9B000045CA5 /* Debug */,
