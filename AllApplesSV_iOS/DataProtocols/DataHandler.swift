@@ -20,9 +20,12 @@ import Cocoa
 // MARK: Handler Class -
 
 public class DataHandler: NSObject {
-  var tableCellHandler: TableViewCellProtocol?
-  var sectionHandler: SectionedDataSource?
+  
+  weak var tableCellHandler: TableViewCellProtocol?
+  weak var sectionHandler: SectionedDataSource?
   weak var delegate: ItemDelegate?
+  
+  let data = DataImplementation()
   
   #if os(iOS) || os(tvOS)
   let defaultTextColor = AColor(red: 66/255, green: 66/255, blue: 66/255, alpha: 1) // #424242
@@ -31,6 +34,17 @@ public class DataHandler: NSObject {
   #if os(OSX)
   let defaultTextColor = AColor.white
   #endif
+  
+  //DataImplementation
+  
+  // MARK: -
+  // MARK: init -
+  
+  override public init() {
+    tableCellHandler = data
+    sectionHandler = data
+  }
+  
 }
 
 // MARK: -
@@ -79,10 +93,6 @@ extension DataHandler: ATableViewDataSource {
   public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
     guard let sectionHandler = sectionHandler else { preconditionFailure("Error, no item handler") }
-    
-//    guard let item = sectionHandler.itemAt(indexPath) else {
-//      preconditionFailure("Error, no item in section: \(indexPath.section), row: \(indexPath.row)!")
-//    }
     
     guard let cellIdentifier = tableCellHandler?.tableCellIdentifierFor(indexPath: indexPath) else {
       preconditionFailure("Error, no Cell identifier for item in section: \(indexPath.section), row: \(indexPath.row)!")

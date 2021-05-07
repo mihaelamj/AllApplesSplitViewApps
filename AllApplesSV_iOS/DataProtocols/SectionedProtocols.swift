@@ -11,7 +11,6 @@ import Foundation
 // MARK: DataSource Protocol -
 
 @objc protocol SectionedDataSource: AnyObject {
-  var data:  [Any] { get }
   
   func numberOfSections() -> Int
   func numberOfItemsInSection(_ section: Int) -> Int
