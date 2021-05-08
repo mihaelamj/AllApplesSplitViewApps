@@ -14,8 +14,6 @@
 		A90A46BF2571AA1400045CA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A46BE2571AA1400045CA5 /* AppDelegate.swift */; };
 		A90A46C32571AA1600045CA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90A46C22571AA1600045CA5 /* Assets.xcassets */; };
 		A90A46D62571AAF300045CA5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A46D52571AAF300045CA5 /* main.swift */; };
-		A90A46E92571B05700045CA5 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A46E82571B05700045CA5 /* CommonViewController.swift */; };
-		A90A46EC2571B07200045CA5 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A46E82571B05700045CA5 /* CommonViewController.swift */; };
 		A90A471D257283DE00045CA5 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A90A471C257283DE00045CA5 /* AllApples */; };
 		A90A4721257283ED00045CA5 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A90A4720257283ED00045CA5 /* AllApples */; };
 		A9FCC3232645751D00BDF73F /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3222645751D00BDF73F /* MainSplitViewController.swift */; };
@@ -57,7 +55,6 @@
 		A90A46C72571AA1600045CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A90A46C82571AA1600045CA5 /* AllApplesSV_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AllApplesSV_Mac.entitlements; sourceTree = "<group>"; };
 		A90A46D52571AAF300045CA5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		A90A46E82571B05700045CA5 /* CommonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
 		A9FCC3222645751D00BDF73F /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
 		A9FCC3252645753400BDF73F /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		A9FCC3282645754100BDF73F /* MainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailViewController.swift; sourceTree = "<group>"; };
@@ -158,7 +155,6 @@
 		A9FCC3352645774000BDF73F /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				A90A46E82571B05700045CA5 /* CommonViewController.swift */,
 				A9FCC3222645751D00BDF73F /* MainSplitViewController.swift */,
 				A9FCC3252645753400BDF73F /* MainTableViewController.swift */,
 				A9FCC3282645754100BDF73F /* MainDetailViewController.swift */,
@@ -296,7 +292,6 @@
 			files = (
 				A9FCC3292645754100BDF73F /* MainDetailViewController.swift in Sources */,
 				A9FCC3382645785200BDF73F /* TableViewCellProtocol.swift in Sources */,
-				A90A46E92571B05700045CA5 /* CommonViewController.swift in Sources */,
 				A9FCC33E2645A60200BDF73F /* ItemDelegate.swift in Sources */,
 				A9FCC3442645CAE500BDF73F /* DataItem.swift in Sources */,
 				A90A46A02571A9AC00045CA5 /* AppDelegate.swift in Sources */,
@@ -318,7 +313,6 @@
 			files = (
 				A9FCC32A2645754100BDF73F /* MainDetailViewController.swift in Sources */,
 				A9FCC3392645785200BDF73F /* TableViewCellProtocol.swift in Sources */,
-				A90A46EC2571B07200045CA5 /* CommonViewController.swift in Sources */,
 				A9FCC33F2645A60200BDF73F /* ItemDelegate.swift in Sources */,
 				A9FCC3452645CAE500BDF73F /* DataItem.swift in Sources */,
 				A90A46BF2571AA1400045CA5 /* AppDelegate.swift in Sources */,
