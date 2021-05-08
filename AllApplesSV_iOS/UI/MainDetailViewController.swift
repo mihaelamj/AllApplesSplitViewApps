@@ -39,6 +39,7 @@ class MainDetailViewController: AViewController {
   var item = DataItem.none {
     didSet {
       debugPrint("Changed item: \(item)")
+      customizeViewInternal()
     }
   }
   
@@ -53,9 +54,7 @@ class MainDetailViewController: AViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // INFO: Need to typecast our view to the appropriate `View` type, which will be resolved at compile time
-    if let aView = view as? MainDetailView {
-      customizeView(aView)
-    }
+
   }
   
 }
@@ -65,10 +64,17 @@ class MainDetailViewController: AViewController {
 
 private extension MainDetailViewController {
   
+  func customizeViewInternal() {
+    if let aView = view as? MainDetailView {
+      customizeView(aView)
+    }
+  }
+  
   func customizeView(_ detailView: MainDetailView) {
     title = item.name
 //    detailView.textLayer.string = "\(item)"
     detailView.textLayer.string = "item"
+    detailView.textLayer.backgroundColor = item.color.cgColor
   }
   
 }

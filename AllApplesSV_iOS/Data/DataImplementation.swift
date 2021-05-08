@@ -16,7 +16,6 @@ import UIKit
 import Cocoa
 #endif
 
-
 class DataImplementation {
   
   // MARK: -

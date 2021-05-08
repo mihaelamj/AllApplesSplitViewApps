@@ -25,14 +25,19 @@ public class MainDetailView: AView {
     let tl = CATextLayer()
     tl.foregroundColor = AColor.white.cgColor
     let helveticaFont = CTFontCreateWithName("Helvetica" as CFString, 60, nil)
-    tl.backgroundColor = AColor.systemBlue.cgColor
+//    tl.backgroundColor = AColor.systemBlue.cgColor
     tl.font = helveticaFont
     tl.isWrapped = true
     tl.truncationMode = .end
     tl.anchorPoint = CGPoint(x: 0, y: 0)
     tl.alignmentMode = .center
     tl.fontSize = 40
+
+    #if os(iOS) || os(tvOS)
+    tl.contentsScale = AScreen.main.scale
+    #endif
     #if os(OSX)
+    tl.contentsScale = AScreen.main?.scale ?? 2
     tl.isGeometryFlipped = true
     #endif
     return tl

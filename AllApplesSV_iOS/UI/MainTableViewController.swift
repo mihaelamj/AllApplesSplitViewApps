@@ -99,7 +99,7 @@ extension MainTableViewController: ItemDelegate {
     
     #if os(OSX)
     guard let splitVC = parent as? NSSplitViewController else { return }
-    detailVC = splitVC.children.last as? MainDetailViewController
+    guard let detailVC = splitVC.children.last as? MainDetailViewController else { return }
     detailVC.item = theItem
     #endif
     
