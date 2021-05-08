@@ -47,7 +47,7 @@ class MainSplitViewController: ASplitViewController {
     #if os(iOS) || os(tvOS)
     setupIos()
     #endif
- //    masterVC.showFirstAnim(detail: detailVC)
+//    masterVC.showFirstItem(detail: detailVC)
   }
   
 }
@@ -73,7 +73,7 @@ private extension MainSplitViewController {
   
   func setupMacOS() {
     #if os(OSX)
-    view.wantsLayer = true
+//    view.wantsLayer = true
     splitView.dividerStyle = .paneSplitter
     
     let splitViewResorationIdentifier = "com.aleahim.restorationId:mainSplitViewController"
@@ -101,8 +101,8 @@ extension MainSplitViewController: UISplitViewControllerDelegate {
     if let nc = secondaryViewController as? UINavigationController {
       if let topVc = nc.topViewController {
         if let dc = topVc as? MainDetailViewController {
-//          let hasDetail = CGCAItem.none !== dc.anim
-          return false //!hasDetail
+          let hasDetail = DataHandler.none !== dc.item
+          return !hasDetail
         }
       }
     }

@@ -19,13 +19,22 @@ import Cocoa
 class MainTableViewController: AViewController {
   
   // MARK: -
+  // MARK: Data Properties -
+  
+  private lazy var data: DataHandler = {
+    let ds = DataHandler()
+    ds.delegate = self
+    return ds
+  }()
+  
+  // MARK: -
   // MARK: UI Properties -
   
   private lazy var tableView: ATableView = {
     let tv = ATableView()
     
-//    tv.dataSource = animData
-//    tv.delegate = animData
+    tv.dataSource = data
+    tv.delegate = data
     
     #if os(iOS) || os(tvOS)
     tv.rowHeight = 50.0
@@ -39,6 +48,35 @@ class MainTableViewController: AViewController {
     return tv
   }()
   
+  // MARK: -
+  // MARK: View Lifecycle -
+  
+  override public func loadView() {
+    self.view = tableView
+  }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    data.registerReusableViews(with: tableView)
+    tableView.reloadData()
+  }
+  
+}
+
+// MARK: -
+// MARK: Helper -
+
+extension MainTableViewController {
+  
+  func showItem(_ item: DataItem, detail: MainDetailViewController) {
+    detail.item = item
+  }
+  
+  func showFirstItem(detail: MainDetailViewController) {
+    guard let firstItem = data.data.items.first else { return }
+    showItem(firstItem, detail: detail)
+  }
+
 }
 
 // MARK: -
@@ -47,22 +85,26 @@ class MainTableViewController: AViewController {
 extension MainTableViewController: ItemDelegate {
   
   func didTapOn(dataSource: Any, item: Any) {
-    guard let theItem = item as? NSObject else { return } // TODO: Change the `NSObject` part -
+    guard let theItem = item as? DataItem else { return }
+    
+    var detailVC: MainDetailViewController?
     
     #if os(iOS) || os(tvOS)
-    let detailVC = MainDetailViewController()
-    // TODO: give `detail` the `item`
+    detailVC = MainDetailViewController()
     let nc = UINavigationController()
     nc.viewControllers = [detailVC]
-//    self.title = animItem.name
     self.showDetailViewController(nc, sender: self)
     #endif
     
     #if os(OSX)
     guard let splitVC = parent as? NSSplitViewController else { return }
-    guard let detail = splitVC.children.last as? MainDetailViewController else { return }
-//    detail.item = theItem
+    detailVC = splitVC.children.last as? MainDetailViewController
     #endif
+    
+    guard let theDetailVC = detailVC else { fatalError("The Detail View Controller is `nil`!") }
+    
+    self.title = theItem.name
+    theDetailVC.item = theItem
   }
   
 }
