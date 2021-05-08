@@ -69,7 +69,7 @@ extension DataImplementation: TableViewCellProtocol {
 extension DataImplementation: SectionedDataSource {
   
   func numberOfSections() -> Int {
-    return 0
+    return 1
   }
   
   func sectionTitleAt(_ indexPath: IndexPath) -> String {
@@ -113,6 +113,5 @@ extension DataImplementation: SectionedDataSource {
     let indexPath = IndexPath(item: index, section: 0)
     return itemIsCheckedAt(indexPath)
   }
-  
   
 }

@@ -19,39 +19,42 @@ import Cocoa
 class MainDetailViewController: AViewController {
   
   // MARK: -
+  // MARK: Properties -
+  
+  private(set) public lazy var mainView: MainDetailView = {
+    let v = MainDetailView()
+    #if os(iOS) || os(tvOS)
+    v.layer.name = "MainDetailView Layer"
+    #endif
+
+    #if os(OSX)
+    v.layer?.name = "MainDetailView Layer"
+    #endif
+    return v
+  }()
+  
+  // MARK: -
   // MARK: Data Properties -
   
   var item = DataItem.none {
-    didSet { customizeView() }
+    didSet {
+      debugPrint("Changed item: \(item)")
+    }
   }
   
-  // MARK: -
-  // MARK: UI Properties -
-  
-  private(set) public lazy var textLayer: CATextLayer = {
-    let tl = CATextLayer()
-    tl.fontSize = view.bounds.size.height * 0.6
-    tl.foregroundColor = AColor.white.cgColor
-    tl.backgroundColor = AColor.systemBlue.cgColor
-    tl.anchorPoint = CGPoint(x: 0, y: 0)
-    tl.bounds = view.bounds.insetBy(dx: 50, dy: 50)
-    tl.position = CGPoint(x: 50.0, y: 50.0)
-    tl.alignmentMode = .center
-    #if os(iOS) || os(tvOS)
-    tl.isGeometryFlipped = true
-    #endif
-    return tl
-  }()
   
   // MARK: -
   // MARK: View Lifecycle -
   
+  override func loadView() {
+    view = mainView
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // INFO: Need to typecast our view to the appropriate `View` type, which will be resolved at compile time
-    if let aView = view as? AView {
-      aView.wantsLayer = true
-      aView.layer?.addSublayer(textLayer)
+    if let aView = view as? MainDetailView {
+      customizeView(aView)
     }
   }
   
@@ -62,9 +65,10 @@ class MainDetailViewController: AViewController {
 
 private extension MainDetailViewController {
   
-  func customizeView() {
+  func customizeView(_ detailView: MainDetailView) {
     title = item.name
-    textLayer.string = item.name
+//    detailView.textLayer.string = "\(item)"
+    detailView.textLayer.string = "item"
   }
   
 }

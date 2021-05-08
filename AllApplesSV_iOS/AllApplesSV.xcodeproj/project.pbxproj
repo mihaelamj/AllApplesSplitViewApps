@@ -38,6 +38,10 @@
 		A9FCC3422645C6CD00BDF73F /* DataImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3402645C6CD00BDF73F /* DataImplementation.swift */; };
 		A9FCC3442645CAE500BDF73F /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3432645CAE500BDF73F /* DataItem.swift */; };
 		A9FCC3452645CAE500BDF73F /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3432645CAE500BDF73F /* DataItem.swift */; };
+		A9FCC34B2646874B00BDF73F /* MainDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC34A2646874B00BDF73F /* MainDetailView.swift */; };
+		A9FCC34C2646874B00BDF73F /* MainDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC34A2646874B00BDF73F /* MainDetailView.swift */; };
+		A9FCC34E2646881100BDF73F /* AScreen+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC34D2646881100BDF73F /* AScreen+Size.swift */; };
+		A9FCC34F2646881100BDF73F /* AScreen+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC34D2646881100BDF73F /* AScreen+Size.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +68,8 @@
 		A9FCC33D2645A60200BDF73F /* ItemDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDelegate.swift; sourceTree = "<group>"; };
 		A9FCC3402645C6CD00BDF73F /* DataImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataImplementation.swift; sourceTree = "<group>"; };
 		A9FCC3432645CAE500BDF73F /* DataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
+		A9FCC34A2646874B00BDF73F /* MainDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailView.swift; sourceTree = "<group>"; };
+		A9FCC34D2646881100BDF73F /* AScreen+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AScreen+Size.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				A9FCC3312645770F00BDF73F /* Collection+Safe.swift */,
+				A9FCC34D2646881100BDF73F /* AScreen+Size.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -155,6 +162,7 @@
 				A9FCC3222645751D00BDF73F /* MainSplitViewController.swift */,
 				A9FCC3252645753400BDF73F /* MainTableViewController.swift */,
 				A9FCC3282645754100BDF73F /* MainDetailViewController.swift */,
+				A9FCC34A2646874B00BDF73F /* MainDetailView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -294,6 +302,8 @@
 				A90A46A02571A9AC00045CA5 /* AppDelegate.swift in Sources */,
 				A90A46A22571A9AC00045CA5 /* SceneDelegate.swift in Sources */,
 				A9FCC3262645753400BDF73F /* MainTableViewController.swift in Sources */,
+				A9FCC34B2646874B00BDF73F /* MainDetailView.swift in Sources */,
+				A9FCC34E2646881100BDF73F /* AScreen+Size.swift in Sources */,
 				A9FCC3412645C6CD00BDF73F /* DataImplementation.swift in Sources */,
 				A9FCC33B26457B2300BDF73F /* DataHandler.swift in Sources */,
 				A9FCC3322645770F00BDF73F /* Collection+Safe.swift in Sources */,
@@ -314,6 +324,8 @@
 				A90A46BF2571AA1400045CA5 /* AppDelegate.swift in Sources */,
 				A90A46D62571AAF300045CA5 /* main.swift in Sources */,
 				A9FCC3272645753400BDF73F /* MainTableViewController.swift in Sources */,
+				A9FCC34C2646874B00BDF73F /* MainDetailView.swift in Sources */,
+				A9FCC34F2646881100BDF73F /* AScreen+Size.swift in Sources */,
 				A9FCC3422645C6CD00BDF73F /* DataImplementation.swift in Sources */,
 				A9FCC33C26457B2300BDF73F /* DataHandler.swift in Sources */,
 				A9FCC3332645770F00BDF73F /* Collection+Safe.swift in Sources */,

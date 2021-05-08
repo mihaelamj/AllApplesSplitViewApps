@@ -38,3 +38,13 @@ class DataItem {
   }
 }
 
+// MARK: -
+// MARK: Description -
+
+extension DataItem: CustomStringConvertible {
+  var description: String {
+    let checked = isChecked ? " ✅" : ""
+    return "\(name)\(checked)"
+  }
+}
+

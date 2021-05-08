@@ -101,7 +101,7 @@ extension MainSplitViewController: UISplitViewControllerDelegate {
     if let nc = secondaryViewController as? UINavigationController {
       if let topVc = nc.topViewController {
         if let dc = topVc as? MainDetailViewController {
-          let hasDetail = DataHandler.none !== dc.item
+          let hasDetail = DataItem.none !== dc.item
           return !hasDetail
         }
       }

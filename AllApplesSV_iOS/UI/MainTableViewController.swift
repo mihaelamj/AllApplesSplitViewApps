@@ -87,10 +87,11 @@ extension MainTableViewController: ItemDelegate {
   func didTapOn(dataSource: Any, item: Any) {
     guard let theItem = item as? DataItem else { return }
     
-    var detailVC: MainDetailViewController?
+    self.title = theItem.name
     
     #if os(iOS) || os(tvOS)
-    detailVC = MainDetailViewController()
+    let detailVC = MainDetailViewController()
+    detailVC.item = theItem
     let nc = UINavigationController()
     nc.viewControllers = [detailVC]
     self.showDetailViewController(nc, sender: self)
@@ -99,12 +100,9 @@ extension MainTableViewController: ItemDelegate {
     #if os(OSX)
     guard let splitVC = parent as? NSSplitViewController else { return }
     detailVC = splitVC.children.last as? MainDetailViewController
+    detailVC.item = theItem
     #endif
     
-    guard let theDetailVC = detailVC else { fatalError("The Detail View Controller is `nil`!") }
-    
-    self.title = theItem.name
-    theDetailVC.item = theItem
   }
   
 }
