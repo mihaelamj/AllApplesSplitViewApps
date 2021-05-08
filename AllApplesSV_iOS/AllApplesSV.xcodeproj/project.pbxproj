@@ -92,10 +92,7 @@
 		A90A46932571A9AC00045CA5 = {
 			isa = PBXGroup;
 			children = (
-				A9FCC3352645774000BDF73F /* UI */,
-				A9FCC3342645772C00BDF73F /* Util */,
-				A9FCC3462645CAEA00BDF73F /* Data */,
-				A9FCC3362645775700BDF73F /* DataProtocols */,
+				A9FCC37226469CA300BDF73F /* Common */,
 				A90A469E2571A9AC00045CA5 /* AllApplesSV_iOS */,
 				A90A46BD2571AA1400045CA5 /* AllApplesSV_Mac */,
 				A90A469D2571A9AC00045CA5 /* Products */,
@@ -181,6 +178,17 @@
 				A9FCC3402645C6CD00BDF73F /* DataImplementation.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		A9FCC37226469CA300BDF73F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A9FCC3352645774000BDF73F /* UI */,
+				A9FCC3342645772C00BDF73F /* Util */,
+				A9FCC3462645CAEA00BDF73F /* Data */,
+				A9FCC3362645775700BDF73F /* DataProtocols */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

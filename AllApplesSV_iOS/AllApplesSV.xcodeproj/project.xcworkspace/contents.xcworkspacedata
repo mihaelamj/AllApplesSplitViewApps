@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/mmj/Developer/personal/AllApplesSplitViewApps/AllApplesSV_iOS/AllApplesSV.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
