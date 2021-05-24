@@ -95,15 +95,6 @@ private extension MainDetailView {
     bottomAnchor.constraint(equalTo: aSuperview.bottomAnchor).isActive = true
   }
   
-  func positioningRect() -> CGRect {
-    #if os(iOS) || os(tvOS)
-    return readableContentGuide.layoutFrame
-    #endif
-    #if os(OSX)
-    return bounds
-    #endif
-  }
-  
   func normalizedHeight(_ height: CGFloat) -> CGFloat {
     let result = height.rounded(to: 10, roundingRule: .up)
     return result
@@ -119,9 +110,8 @@ private extension MainDetailView {
     let textLayerWidth = normalizedWidth(self.bounds.width * textLayerWidthRatio)
       
     textLayer.fontSize = textLayerHeight * 0.8
-    let posRect = positioningRect()
+    let posRect = readableRect()
     var rect = posRect
-    
     
     rect.size.height = textLayerHeight
     rect.size.width -= textLayerWidth
