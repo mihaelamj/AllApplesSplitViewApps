@@ -25,13 +25,16 @@ public class MainDetailView: ALayerView {
     let tl = CATextLayer()
     tl.foregroundColor = AColor.white.cgColor
     let helveticaFont = CTFontCreateWithName("Helvetica" as CFString, 60, nil)
-//    tl.backgroundColor = AColor.systemBlue.cgColor
+
     tl.font = helveticaFont
     tl.isWrapped = true
     tl.truncationMode = .end
     tl.anchorPoint = CGPoint(x: 0, y: 0)
     tl.alignmentMode = .center
     tl.fontSize = 40
+    
+    tl.borderColor = AColor.black.cgColor
+    tl.borderWidth = 5.0
     
     #if os(OSX)
     tl.isGeometryFlipped = isFlipped
@@ -48,9 +51,6 @@ public class MainDetailView: ALayerView {
   }()
   
   // MARK: -
-  // MARK: Init -
-  
-  // MARK: -
   // MARK: Template Overrides -
   
   override public func customInit() {
@@ -59,7 +59,7 @@ public class MainDetailView: ALayerView {
   }
   
   // MARK: -
-  // MARK: Layout -
+  // MARK: Layout Overrides -
 
   public override func layoutSubviews() {
     super.layoutSubviews()
@@ -88,8 +88,8 @@ private extension MainDetailView {
   }
   
   func layoutTextLayer() {
-//    textLayer.fontSize = bounds.size.width * 0.2
-    textLayer.bounds = bounds.insetBy(dx: 50, dy: 100)
-    textLayer.position = CGPoint(x: 50.0, y: 100.0)
+    textLayer.fontSize = bounds.size.width * 0.2
+    textLayer.bounds = bounds.insetBy(dx: 50, dy: 50)
+    textLayer.position = CGPoint(x: 50.0, y: 50.0)
   }
 }

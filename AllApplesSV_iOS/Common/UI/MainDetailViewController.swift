@@ -71,10 +71,8 @@ private extension MainDetailViewController {
   }
   
   func customizeView(_ detailView: MainDetailView) {
-    title = item.name
-//    detailView.textLayer.string = "\(item)"
-    detailView.textLayer.string = "item"
-    detailView.textLayer.backgroundColor = item.color.cgColor
+    detailView.textLayer.string = item.name
+    detailView.myColor = item.color
   }
   
 }

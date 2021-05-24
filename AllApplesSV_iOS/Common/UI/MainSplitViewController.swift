@@ -73,7 +73,7 @@ private extension MainSplitViewController {
   
   func setupMacOS() {
     #if os(OSX)
-//    view.wantsLayer = true
+
     splitView.dividerStyle = .paneSplitter
     
     let splitViewResorationIdentifier = "com.aleahim.restorationId:mainSplitViewController"
