@@ -6,3 +6,17 @@
 //
 
 import Foundation
+import AllApples
+
+public extension DataItem {
+  static func viewClassForItem(named: String) -> ALayerView.Type? {
+    
+    switch named {
+      case "Item 2":
+        return CustomDetailView.self
+      default:
+        return ALayerView.self
+    }
+  }
+  
+}

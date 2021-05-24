@@ -23,13 +23,7 @@ open class MainDetailViewController: AViewController {
   
   private(set) public lazy var mainView: MainDetailView = {
     let v = MainDetailView()
-    #if os(iOS) || os(tvOS)
-    v.layer.name = "MainDetailView Layer"
-    #endif
-
-    #if os(OSX)
-    v.layer?.name = "MainDetailView Layer"
-    #endif
+    v.forcedLayer.name = "MainDetailView Layer"
     return v
   }()
   

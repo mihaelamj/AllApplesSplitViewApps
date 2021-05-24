@@ -20,6 +20,8 @@
 		A9579804265C124A00694996 /* FloatingPoint+Nearest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9579802265C124A00694996 /* FloatingPoint+Nearest.swift */; };
 		A9CD1994265C35E600CF2345 /* DataItem+AViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CD1993265C35E600CF2345 /* DataItem+AViewClass.swift */; };
 		A9CD1995265C35E600CF2345 /* DataItem+AViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CD1993265C35E600CF2345 /* DataItem+AViewClass.swift */; };
+		A9CD1997265C380D00CF2345 /* CustomDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CD1996265C380D00CF2345 /* CustomDetailView.swift */; };
+		A9CD1998265C380D00CF2345 /* CustomDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CD1996265C380D00CF2345 /* CustomDetailView.swift */; };
 		A9FCC3232645751D00BDF73F /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3222645751D00BDF73F /* MainSplitViewController.swift */; };
 		A9FCC3242645751D00BDF73F /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3222645751D00BDF73F /* MainSplitViewController.swift */; };
 		A9FCC3262645753400BDF73F /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3252645753400BDF73F /* MainTableViewController.swift */; };
@@ -59,6 +61,7 @@
 		A90A46D52571AAF300045CA5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A9579802265C124A00694996 /* FloatingPoint+Nearest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Nearest.swift"; sourceTree = "<group>"; };
 		A9CD1993265C35E600CF2345 /* DataItem+AViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataItem+AViewClass.swift"; sourceTree = "<group>"; };
+		A9CD1996265C380D00CF2345 /* CustomDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDetailView.swift; sourceTree = "<group>"; };
 		A9FCC3222645751D00BDF73F /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
 		A9FCC3252645753400BDF73F /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		A9FCC3282645754100BDF73F /* MainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +162,7 @@
 				A9FCC3252645753400BDF73F /* MainTableViewController.swift */,
 				A9FCC3282645754100BDF73F /* MainDetailViewController.swift */,
 				A9FCC34A2646874B00BDF73F /* MainDetailView.swift */,
+				A9CD1996265C380D00CF2345 /* CustomDetailView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -312,6 +316,7 @@
 				A90A46A22571A9AC00045CA5 /* SceneDelegate.swift in Sources */,
 				A9FCC3262645753400BDF73F /* MainTableViewController.swift in Sources */,
 				A9FCC34B2646874B00BDF73F /* MainDetailView.swift in Sources */,
+				A9CD1997265C380D00CF2345 /* CustomDetailView.swift in Sources */,
 				A9FCC3412645C6CD00BDF73F /* DataImplementation.swift in Sources */,
 				A9FCC33B26457B2300BDF73F /* DataHandler.swift in Sources */,
 				A9FCC3322645770F00BDF73F /* Collection+Safe.swift in Sources */,
@@ -334,6 +339,7 @@
 				A90A46D62571AAF300045CA5 /* main.swift in Sources */,
 				A9FCC3272645753400BDF73F /* MainTableViewController.swift in Sources */,
 				A9FCC34C2646874B00BDF73F /* MainDetailView.swift in Sources */,
+				A9CD1998265C380D00CF2345 /* CustomDetailView.swift in Sources */,
 				A9FCC3422645C6CD00BDF73F /* DataImplementation.swift in Sources */,
 				A9FCC33C26457B2300BDF73F /* DataHandler.swift in Sources */,
 				A9FCC3332645770F00BDF73F /* Collection+Safe.swift in Sources */,

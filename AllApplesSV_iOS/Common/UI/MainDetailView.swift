@@ -24,6 +24,8 @@ open class MainDetailView: ALayerView {
   let textLayerHeightRatio: CGFloat = 0.1
   let textLayerWidthRatio: CGFloat = 0.9
   
+  var textLayerHeight: CGFloat = 0.0
+  
   // MARK: -
   // MARK: UI Properties -
   
@@ -54,6 +56,8 @@ open class MainDetailView: ALayerView {
     return tl
   }()
   
+  private(set) public var contentView: ALayerView?
+  
   // MARK: -
   // MARK: Template Overrides -
   
@@ -74,22 +78,9 @@ open class MainDetailView: ALayerView {
 }
 
 // MARK: -
-// MARK: Private -
+// MARK: Private Sizes -
 
 private extension MainDetailView {
-  
-  func setupLayer() {
-    forcedLayer.addSublayer(textLayer)
-  }
-  
-  func sizeToSuperView() {
-    guard let aSuperview = superview else { return }
-    translatesAutoresizingMaskIntoConstraints = false
-    topAnchor.constraint(equalTo: aSuperview.topAnchor).isActive = true
-    leadingAnchor.constraint(equalTo: aSuperview.leadingAnchor).isActive = true
-    trailingAnchor.constraint(equalTo: aSuperview.trailingAnchor).isActive = true
-    bottomAnchor.constraint(equalTo: aSuperview.bottomAnchor).isActive = true
-  }
   
   func normalizedHeight(_ height: CGFloat) -> CGFloat {
     let result = height.rounded(to: 10, roundingRule: .up)
@@ -101,11 +92,21 @@ private extension MainDetailView {
     return result
   }
   
-  func layoutTextLayer() {
-    let textLayerHeight = normalizedHeight(self.bounds.height * textLayerHeightRatio)
+  func sizeToSuperView() {
+    guard let aSuperview = superview else { return }
+    translatesAutoresizingMaskIntoConstraints = false
+    topAnchor.constraint(equalTo: aSuperview.topAnchor).isActive = true
+    leadingAnchor.constraint(equalTo: aSuperview.leadingAnchor).isActive = true
+    trailingAnchor.constraint(equalTo: aSuperview.trailingAnchor).isActive = true
+    bottomAnchor.constraint(equalTo: aSuperview.bottomAnchor).isActive = true
+  }
+  
+  func getTextLayerFrame(layerHeight: CGFloat) -> CGRect {
+    
     let textLayerWidth = normalizedWidth(self.bounds.width * textLayerWidthRatio)
-      
-    textLayer.fontSize = textLayerHeight * 0.8
+    
+    var result: CGRect = .zero
+    
     let posRect = readableRect()
     var rect = posRect
     
@@ -117,7 +118,56 @@ private extension MainDetailView {
       x: (bounds.width - textLayerWidth) / 2.0 ,
       y: posRect.origin.y
     )
-    textLayer.bounds = CGRect(origin: .zero, size: rectSize)
-    textLayer.position = rectOrigin
+    
+    result = CGRect(origin: rectOrigin, size: rectSize)
+    
+    return result
+  }
+  
+}
+
+// MARK: -
+// MARK: Private Layout -
+
+private extension MainDetailView {
+  
+  func setupLayer() {
+    forcedLayer.addSublayer(textLayer)
+  }
+  
+  func layoutTextLayer() {
+    textLayerHeight = normalizedHeight(self.bounds.height * textLayerHeightRatio)
+    textLayer.fontSize = textLayerHeight * 0.8
+    
+    let resultRect = getTextLayerFrame(layerHeight: textLayerHeight)
+    
+    textLayer.bounds = CGRect(origin: .zero, size: resultRect.size)
+    textLayer.position = resultRect.origin
+  }
+  
+//  func layoutTextLayer() {
+//    let textLayerWidth = normalizedWidth(self.bounds.width * textLayerWidthRatio)
+//    textLayerHeight = normalizedHeight(self.bounds.height * textLayerHeightRatio)
+//    let textLayerWidth = normalizedWidth(self.bounds.width * textLayerWidthRatio)
+//
+//    textLayer.fontSize = textLayerHeight * 0.8
+//    let posRect = readableRect()
+//    var rect = posRect
+//
+//    rect.size.height = textLayerHeight
+//    rect.size.width -= textLayerWidth
+//
+//    let rectSize = CGSize(width: textLayerWidth, height: textLayerHeight)
+//    let rectOrigin = CGPoint(
+//      x: (bounds.width - textLayerWidth) / 2.0 ,
+//      y: posRect.origin.y
+//    )
+//    textLayer.bounds = CGRect(origin: .zero, size: rectSize)
+//    textLayer.position = rectOrigin
+//  }
+  
+  func layoutContentView() {
+    guard let aContentView = contentView else { return }
+    
   }
 }
