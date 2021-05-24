@@ -18,6 +18,16 @@ import Cocoa
 
 public class MainDetailView: ALayerView {
   
+  #if os(iOS) || os(tvOS)
+  let textLayerHeightRatio: CGFloat = 0.1
+  let textLayerWidthRatio: CGFloat = 0.9
+  #endif
+
+  #if os(OSX)
+  let textLayerHeightRatio: CGFloat = 0.1
+  let textLayerWidthRatio: CGFloat = 0.9
+  #endif
+  
   // MARK: -
   // MARK: UI Properties -
   
@@ -87,9 +97,43 @@ private extension MainDetailView {
     bottomAnchor.constraint(equalTo: aSuperview.bottomAnchor).isActive = true
   }
   
+  func positioningRect() -> CGRect {
+    #if os(iOS) || os(tvOS)
+    return readableContentGuide.layoutFrame
+    #endif
+    #if os(OSX)
+    return bounds
+    #endif
+  }
+  
+  func normalizedHeight(_ height: CGFloat) -> CGFloat {
+    let result = height.rounded(to: 10, roundingRule: .up)
+    return result
+  }
+  
+  func normalizedWidth(_ width: CGFloat) -> CGFloat {
+    let result = width.rounded(to: 2, roundingRule: .down)
+    return result
+  }
+  
   func layoutTextLayer() {
-    textLayer.fontSize = bounds.size.width * 0.2
-    textLayer.bounds = bounds.insetBy(dx: 50, dy: 50)
-    textLayer.position = CGPoint(x: 50.0, y: 50.0)
+    let textLayerHeight = normalizedHeight(self.bounds.height * textLayerHeightRatio)
+    let textLayerWidth = normalizedWidth(self.bounds.width * textLayerWidthRatio)
+      
+    textLayer.fontSize = textLayerHeight * 0.8
+    let posRect = positioningRect()
+    var rect = posRect
+    
+    
+    rect.size.height = textLayerHeight
+    rect.size.width -= textLayerWidth
+    
+    let rectSize = CGSize(width: textLayerWidth, height: textLayerHeight)
+    let rectOrigin = CGPoint(
+      x: (bounds.width - textLayerWidth) / 2.0 ,
+      y: posRect.origin.y
+    )
+    textLayer.bounds = CGRect(origin: .zero, size: rectSize)
+    textLayer.position = rectOrigin
   }
 }

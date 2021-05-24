@@ -16,6 +16,8 @@
 		A90A46D62571AAF300045CA5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A46D52571AAF300045CA5 /* main.swift */; };
 		A90A471D257283DE00045CA5 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A90A471C257283DE00045CA5 /* AllApples */; };
 		A90A4721257283ED00045CA5 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A90A4720257283ED00045CA5 /* AllApples */; };
+		A9579803265C124A00694996 /* FloatingPoint+Nearest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9579802265C124A00694996 /* FloatingPoint+Nearest.swift */; };
+		A9579804265C124A00694996 /* FloatingPoint+Nearest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9579802265C124A00694996 /* FloatingPoint+Nearest.swift */; };
 		A9FCC3232645751D00BDF73F /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3222645751D00BDF73F /* MainSplitViewController.swift */; };
 		A9FCC3242645751D00BDF73F /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3222645751D00BDF73F /* MainSplitViewController.swift */; };
 		A9FCC3262645753400BDF73F /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3252645753400BDF73F /* MainTableViewController.swift */; };
@@ -55,6 +57,7 @@
 		A90A46C72571AA1600045CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A90A46C82571AA1600045CA5 /* AllApplesSV_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AllApplesSV_Mac.entitlements; sourceTree = "<group>"; };
 		A90A46D52571AAF300045CA5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A9579802265C124A00694996 /* FloatingPoint+Nearest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Nearest.swift"; sourceTree = "<group>"; };
 		A9FCC3222645751D00BDF73F /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
 		A9FCC3252645753400BDF73F /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		A9FCC3282645754100BDF73F /* MainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +148,7 @@
 			children = (
 				A9FCC3312645770F00BDF73F /* Collection+Safe.swift */,
 				A9FCC34D2646881100BDF73F /* AScreen+Size.swift */,
+				A9579802265C124A00694996 /* FloatingPoint+Nearest.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -303,6 +307,7 @@
 				A9FCC33E2645A60200BDF73F /* ItemDelegate.swift in Sources */,
 				A9FCC3442645CAE500BDF73F /* DataItem.swift in Sources */,
 				A90A46A02571A9AC00045CA5 /* AppDelegate.swift in Sources */,
+				A9579803265C124A00694996 /* FloatingPoint+Nearest.swift in Sources */,
 				A90A46A22571A9AC00045CA5 /* SceneDelegate.swift in Sources */,
 				A9FCC3262645753400BDF73F /* MainTableViewController.swift in Sources */,
 				A9FCC34B2646874B00BDF73F /* MainDetailView.swift in Sources */,
@@ -324,6 +329,7 @@
 				A9FCC33F2645A60200BDF73F /* ItemDelegate.swift in Sources */,
 				A9FCC3452645CAE500BDF73F /* DataItem.swift in Sources */,
 				A90A46BF2571AA1400045CA5 /* AppDelegate.swift in Sources */,
+				A9579804265C124A00694996 /* FloatingPoint+Nearest.swift in Sources */,
 				A90A46D62571AAF300045CA5 /* main.swift in Sources */,
 				A9FCC3272645753400BDF73F /* MainTableViewController.swift in Sources */,
 				A9FCC34C2646874B00BDF73F /* MainDetailView.swift in Sources */,
