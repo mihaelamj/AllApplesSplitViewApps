@@ -35,7 +35,6 @@ public class DataHandler: NSObject {
   let defaultTextColor = AColor.white
   #endif
   
-  //DataImplementation
   
   // MARK: -
   // MARK: init -
@@ -44,7 +43,6 @@ public class DataHandler: NSObject {
     tableCellHandler = data
     sectionHandler = data
   }
-  
 }
 
 // MARK: -
