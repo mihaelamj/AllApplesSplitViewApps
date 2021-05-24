@@ -22,7 +22,7 @@ public extension AScreen {
     #endif
     
     #if os(OSX)
-    return AScreen.main?.visibleFrame.size ?? CGSize(width: 300.0, height: 300.0)
+    return AScreen.main?.visibleFrame.size ?? CGSize(width: 500.0, height: 500.0)
     #endif
   }
 }
