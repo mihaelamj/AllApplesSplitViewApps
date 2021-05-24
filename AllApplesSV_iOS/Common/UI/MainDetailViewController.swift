@@ -16,7 +16,7 @@ import UIKit
 import Cocoa
 #endif
 
-class MainDetailViewController: AViewController {
+open class MainDetailViewController: AViewController {
   
   // MARK: -
   // MARK: Properties -
@@ -47,11 +47,11 @@ class MainDetailViewController: AViewController {
   // MARK: -
   // MARK: View Lifecycle -
   
-  override func loadView() {
+  open override func loadView() {
     view = mainView
   }
   
-  override func viewDidLoad() {
+  open override func viewDidLoad() {
     super.viewDidLoad()
     // INFO: Need to typecast our view to the appropriate `View` type, which will be resolved at compile time
 

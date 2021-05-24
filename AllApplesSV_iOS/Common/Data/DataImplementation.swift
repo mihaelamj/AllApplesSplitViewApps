@@ -16,7 +16,7 @@ import UIKit
 import Cocoa
 #endif
 
-class DataImplementation {
+open class DataImplementation {
   
   // MARK: -
   // MARK: Data Properties -
@@ -43,19 +43,19 @@ class DataImplementation {
 
 extension DataImplementation: TableViewCellProtocol {
   
-  var tableCellIdentifiers: [String] {
+  public var tableCellIdentifiers: [String] {
    return cellidentifiers
   }
   
-  var tableCellClassTypes: [CellClassType] {
+  public var tableCellClassTypes: [CellClassType] {
     return cellClasses
   }
   
-  func tableCellIdentifierFor(indexPath: IndexPath) -> String? {
+  public func tableCellIdentifierFor(indexPath: IndexPath) -> String? {
     return cellidentifiers[safe: indexPath.section]
   }
   
-  func tableCellClassFor(identifier: String) -> CellClassType? {
+  public func tableCellClassFor(identifier: String) -> CellClassType? {
     guard let index = cellidentifiers.firstIndex(where: { $0 == identifier }) else { return nil }
     return cellClasses[safe: index]
   }
@@ -67,48 +67,48 @@ extension DataImplementation: TableViewCellProtocol {
 
 extension DataImplementation: SectionedDataSource {
   
-  func numberOfSections() -> Int {
+  public func numberOfSections() -> Int {
     return 1
   }
   
-  func sectionTitleAt(_ indexPath: IndexPath) -> String {
+  public func sectionTitleAt(_ indexPath: IndexPath) -> String {
     return ""
   }
   
-  func sectionAt(_ indexPath: IndexPath) -> Any? {
+  public func sectionAt(_ indexPath: IndexPath) -> Any? {
     return nil
   }
   
-  func numberOfItemsInSection(_ section: Int) -> Int {
+  public func numberOfItemsInSection(_ section: Int) -> Int {
     return items.count
   }
   
-  func itemTitleAt(_ indexPath: IndexPath) -> String {
+  public func itemTitleAt(_ indexPath: IndexPath) -> String {
     return items[safe: indexPath.item]?.name ?? "N/A"
   }
   
-  func sectionlessItemTitleAt(_ index: Int) -> String {
+  public func sectionlessItemTitleAt(_ index: Int) -> String {
     let indexPath = IndexPath(item: index, section: 0)
     return itemTitleAt(indexPath)
   }
   
-  func itemAt(_ indexPath: IndexPath) -> Any? {
+  public func itemAt(_ indexPath: IndexPath) -> Any? {
     return items[safe: indexPath.item]
   }
   
-  func sectionlessItemAt(_ index: Int) -> Any? {
+  public func sectionlessItemAt(_ index: Int) -> Any? {
     let indexPath = IndexPath(item: index, section: 0)
     return itemAt(indexPath)
   }
   
-  func itemIsCheckedAt(_ indexPath: IndexPath) -> Bool {
+  public func itemIsCheckedAt(_ indexPath: IndexPath) -> Bool {
     if let item = itemAt(indexPath) as? DataItem {
       return item.isChecked
     }
     return false
   }
   
-  func sectionlessItemIsCheckedAt(_ index: Int) -> Bool {
+  public func sectionlessItemIsCheckedAt(_ index: Int) -> Bool {
     let indexPath = IndexPath(item: index, section: 0)
     return itemIsCheckedAt(indexPath)
   }

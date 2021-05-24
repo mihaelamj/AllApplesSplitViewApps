@@ -16,7 +16,7 @@ import UIKit
 import Cocoa
 #endif
 
-class DataItem {
+open class DataItem {
   
   // MARK: -
   // MARK: Data Properties -
@@ -53,7 +53,7 @@ class DataItem {
 // MARK: Description -
 
 extension DataItem: CustomStringConvertible {
-  var description: String {
+  public var description: String {
     let checked = isChecked ? " ✅" : ""
     return "\(name)\(checked)"
   }

@@ -18,6 +18,8 @@
 		A90A4721257283ED00045CA5 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A90A4720257283ED00045CA5 /* AllApples */; };
 		A9579803265C124A00694996 /* FloatingPoint+Nearest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9579802265C124A00694996 /* FloatingPoint+Nearest.swift */; };
 		A9579804265C124A00694996 /* FloatingPoint+Nearest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9579802265C124A00694996 /* FloatingPoint+Nearest.swift */; };
+		A9CD1994265C35E600CF2345 /* DataItem+AViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CD1993265C35E600CF2345 /* DataItem+AViewClass.swift */; };
+		A9CD1995265C35E600CF2345 /* DataItem+AViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CD1993265C35E600CF2345 /* DataItem+AViewClass.swift */; };
 		A9FCC3232645751D00BDF73F /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3222645751D00BDF73F /* MainSplitViewController.swift */; };
 		A9FCC3242645751D00BDF73F /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3222645751D00BDF73F /* MainSplitViewController.swift */; };
 		A9FCC3262645753400BDF73F /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3252645753400BDF73F /* MainTableViewController.swift */; };
@@ -56,6 +58,7 @@
 		A90A46C82571AA1600045CA5 /* AllApplesSV_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AllApplesSV_Mac.entitlements; sourceTree = "<group>"; };
 		A90A46D52571AAF300045CA5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A9579802265C124A00694996 /* FloatingPoint+Nearest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Nearest.swift"; sourceTree = "<group>"; };
+		A9CD1993265C35E600CF2345 /* DataItem+AViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataItem+AViewClass.swift"; sourceTree = "<group>"; };
 		A9FCC3222645751D00BDF73F /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
 		A9FCC3252645753400BDF73F /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		A9FCC3282645754100BDF73F /* MainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				A9FCC3432645CAE500BDF73F /* DataItem.swift */,
+				A9CD1993265C35E600CF2345 /* DataItem+AViewClass.swift */,
 				A9FCC3402645C6CD00BDF73F /* DataImplementation.swift */,
 			);
 			path = Data;
@@ -299,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9FCC3292645754100BDF73F /* MainDetailViewController.swift in Sources */,
+				A9CD1994265C35E600CF2345 /* DataItem+AViewClass.swift in Sources */,
 				A9FCC3382645785200BDF73F /* TableViewCellProtocol.swift in Sources */,
 				A9FCC33E2645A60200BDF73F /* ItemDelegate.swift in Sources */,
 				A9FCC3442645CAE500BDF73F /* DataItem.swift in Sources */,
@@ -320,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9FCC32A2645754100BDF73F /* MainDetailViewController.swift in Sources */,
+				A9CD1995265C35E600CF2345 /* DataItem+AViewClass.swift in Sources */,
 				A9FCC3392645785200BDF73F /* TableViewCellProtocol.swift in Sources */,
 				A9FCC33F2645A60200BDF73F /* ItemDelegate.swift in Sources */,
 				A9FCC3452645CAE500BDF73F /* DataItem.swift in Sources */,

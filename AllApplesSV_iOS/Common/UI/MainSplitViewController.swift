@@ -16,7 +16,7 @@ import UIKit
 import Cocoa
 #endif
 
-class MainSplitViewController: ASplitViewController {
+open class MainSplitViewController: ASplitViewController {
   
   // MARK: -
   // MARK: Properties -
@@ -33,7 +33,7 @@ class MainSplitViewController: ASplitViewController {
     setupMacOS()
   }
   
-  required init?(coder: NSCoder) {
+  required public init?(coder: NSCoder) {
     super.init(coder: coder)
     setupMacOS()
   }
@@ -42,7 +42,7 @@ class MainSplitViewController: ASplitViewController {
   // MARK: -
   // MARK: View Lifecycle -
   
-  override func viewDidLoad() {
+  open override func viewDidLoad() {
     super.viewDidLoad()
     #if os(iOS) || os(tvOS)
     setupIos()

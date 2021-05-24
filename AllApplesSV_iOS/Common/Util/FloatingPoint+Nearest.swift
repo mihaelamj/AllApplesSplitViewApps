@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension FloatingPoint {
+public extension FloatingPoint {
   func rounded(to value: Self, roundingRule: FloatingPointRoundingRule = .toNearestOrAwayFromZero) -> Self {
     (self / value).rounded(roundingRule) * value
   }

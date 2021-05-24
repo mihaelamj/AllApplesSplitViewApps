@@ -16,7 +16,7 @@ import UIKit
 import Cocoa
 #endif
 
-class MainTableViewController: AViewController {
+open class MainTableViewController: AViewController {
   
   // MARK: -
   // MARK: Data Properties -
@@ -55,7 +55,7 @@ class MainTableViewController: AViewController {
     self.view = tableView
   }
   
-  override func viewDidLoad() {
+  open override func viewDidLoad() {
     super.viewDidLoad()
     data.registerReusableViews(with: tableView)
     tableView.reloadData()

@@ -10,7 +10,7 @@ import Foundation
 // MARK: -
 // MARK: DataSource Protocol -
 
-@objc protocol SectionedDataSource: AnyObject {
+@objc public protocol SectionedDataSource: AnyObject {
   
   func numberOfSections() -> Int
   func numberOfItemsInSection(_ section: Int) -> Int

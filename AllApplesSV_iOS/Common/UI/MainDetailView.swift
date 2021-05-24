@@ -16,7 +16,7 @@ import UIKit
 import Cocoa
 #endif
 
-public class MainDetailView: ALayerView {
+open class MainDetailView: ALayerView {
   
   // MARK: -
   // MARK: Data Properties -

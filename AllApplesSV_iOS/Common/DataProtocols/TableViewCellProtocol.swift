@@ -19,7 +19,7 @@ import Cocoa
 // MARK: -
 // MARK: DataSource Protocol -
 
-@objc protocol TableViewCellProtocol: AnyObject {
+@objc public protocol TableViewCellProtocol: AnyObject {
   func tableCellIdentifierFor(indexPath: IndexPath) -> String?
   func tableCellClassFor(identifier: String) -> CellClassType?
   
