@@ -58,6 +58,21 @@ open class MainDetailView: ALayerView {
   
   private(set) public var contentView: ALayerView?
   
+  var name: String? = nil {
+    didSet {
+      if name == nil {
+        removeAllChildSubViews()
+      } else {
+        addChildSubView()
+      }
+      
+      #if os(OSX)
+      // will call `layoutSubviews` on `macOS`
+      needsLayout = true
+      #endif
+    }
+  }
+  
   // MARK: -
   // MARK: Template Overrides -
   
@@ -71,8 +86,51 @@ open class MainDetailView: ALayerView {
 
   public override func layoutSubviews() {
     super.layoutSubviews()
+    debugPrint("layoutSubviews")
     sizeToSuperView()
     layoutTextLayer()
+    layoutContentView()
+  }
+  
+}
+
+// MARK: -
+// MARK: Private Subviews -
+
+private extension MainDetailView {
+  
+  func makeContentView(name: String?) -> ALayerView? {
+    guard let aName = name else { return nil }
+    guard let ContentViewClass = DataItem.viewClassForItem(named: aName) else { return nil }
+    let viewInstance = ContentViewClass.init()
+    return viewInstance
+  }
+  
+  private func findChildViews() -> [CustomDetailView] {
+    let childViews = subviews.compactMap { $0 as? CustomDetailView }
+    return childViews
+  }
+  
+  
+  private func removeAllChildSubViews() {
+    
+    contentView?.removeFromSuperview()
+    contentView = nil
+    
+    subviews.forEach { $0.removeFromSuperview() }
+    
+    //check
+    let ghostChildren = findChildViews()
+    if !ghostChildren.isEmpty {
+      debugPrint("We have ghosts: \(ghostChildren.count)")
+    }
+    
+  }
+  
+  private func addChildSubView() {
+    guard let aContentView = makeContentView(name: name) else { return }
+    contentView = aContentView
+    addSubview(aContentView)
   }
   
 }
@@ -124,6 +182,23 @@ private extension MainDetailView {
     return result
   }
   
+  func getContentLayerFrame() -> CGRect {
+    let posRect = readableRect()
+    var rect = posRect
+    
+    rect.origin = CGPoint(
+      x: posRect.origin.x,
+      y: posRect.origin.y + textLayer.bounds.size.height
+    )
+    
+    rect.size = CGSize (
+      width: posRect.size.width,
+      height: posRect.size.height - textLayer.bounds.size.height
+    )
+    
+    return rect
+  }
+  
 }
 
 // MARK: -
@@ -145,29 +220,11 @@ private extension MainDetailView {
     textLayer.position = resultRect.origin
   }
   
-//  func layoutTextLayer() {
-//    let textLayerWidth = normalizedWidth(self.bounds.width * textLayerWidthRatio)
-//    textLayerHeight = normalizedHeight(self.bounds.height * textLayerHeightRatio)
-//    let textLayerWidth = normalizedWidth(self.bounds.width * textLayerWidthRatio)
-//
-//    textLayer.fontSize = textLayerHeight * 0.8
-//    let posRect = readableRect()
-//    var rect = posRect
-//
-//    rect.size.height = textLayerHeight
-//    rect.size.width -= textLayerWidth
-//
-//    let rectSize = CGSize(width: textLayerWidth, height: textLayerHeight)
-//    let rectOrigin = CGPoint(
-//      x: (bounds.width - textLayerWidth) / 2.0 ,
-//      y: posRect.origin.y
-//    )
-//    textLayer.bounds = CGRect(origin: .zero, size: rectSize)
-//    textLayer.position = rectOrigin
-//  }
-  
   func layoutContentView() {
     guard let aContentView = contentView else { return }
-    
+    let resultRect = getContentLayerFrame()
+    aContentView.frame = resultRect
+    aContentView.forcedLayer.backgroundColor = AColor.randomColor().cgColor
+//    aContentView.forcedLayer.backgroundColor = AColor.systemTeal.cgColor
   }
 }

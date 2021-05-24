@@ -67,6 +67,7 @@ private extension MainDetailViewController {
   func customizeView(_ detailView: MainDetailView) {
     detailView.textLayer.string = item.name
     detailView.myColor = item.color
+    detailView.name = item.name
   }
   
 }

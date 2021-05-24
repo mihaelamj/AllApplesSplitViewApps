@@ -602,7 +602,7 @@
 			repositoryURL = "https://github.com/mihaelamj/allapples";
 			requirement = {
 				kind = exactVersion;
-				version = 0.9.5;
+				version = 0.9.8;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
