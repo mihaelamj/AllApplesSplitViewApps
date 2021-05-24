@@ -16,7 +16,7 @@ import UIKit
 import Cocoa
 #endif
 
-public class MainDetailView: AView {
+public class MainDetailView: ALayerView {
   
   // MARK: -
   // MARK: UI Properties -
@@ -46,13 +46,12 @@ public class MainDetailView: AView {
   // MARK: -
   // MARK: Init -
   
-  required init() {
-    super.init(frame: .zero)
-    setupLayer()
-  }
+  // MARK: -
+  // MARK: Template Overrides -
   
-  required init?(coder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
+  override public func customInit() {
+    super.customInit()
+    setupLayer()
   }
   
   // MARK: -
@@ -72,14 +71,7 @@ public class MainDetailView: AView {
 private extension MainDetailView {
   
   func setupLayer() {
-    #if os(OSX)
-    wantsLayer = true
-    layer?.addSublayer(textLayer)
-    #endif
-    
-    #if os(iOS) || os(tvOS)
-    layer.addSublayer(textLayer)
-    #endif
+    forcedLayer.addSublayer(textLayer)
   }
   
   func sizeToSuperView() {
