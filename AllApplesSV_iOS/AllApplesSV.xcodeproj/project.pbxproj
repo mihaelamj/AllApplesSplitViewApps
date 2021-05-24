@@ -587,9 +587,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mihaelamj/allapples";
 			requirement = {
-				kind = versionRange;
-				maximumVersion = 1.0.0;
-				minimumVersion = 0.6.0;
+				kind = exactVersion;
+				version = 0.9.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

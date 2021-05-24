@@ -32,14 +32,18 @@ public class MainDetailView: ALayerView {
     tl.anchorPoint = CGPoint(x: 0, y: 0)
     tl.alignmentMode = .center
     tl.fontSize = 40
-
+    
+    #if os(OSX)
+    tl.isGeometryFlipped = isFlipped
+    tl.contentsScale = AScreen.main?.scale ?? 2.0
+    debugPrint("tl.contentsScale = \(tl.contentsScale)")
+    #endif
+    
     #if os(iOS) || os(tvOS)
     tl.contentsScale = AScreen.main.scale
+    debugPrint("tl.contentsScale = \(tl.contentsScale)")
     #endif
-    #if os(OSX)
-    tl.contentsScale = AScreen.main?.scale ?? 2
-    tl.isGeometryFlipped = true
-    #endif
+    
     return tl
   }()
   
