@@ -18,15 +18,11 @@ import Cocoa
 
 public class MainDetailView: ALayerView {
   
-  #if os(iOS) || os(tvOS)
+  // MARK: -
+  // MARK: Data Properties -
+  
   let textLayerHeightRatio: CGFloat = 0.1
   let textLayerWidthRatio: CGFloat = 0.9
-  #endif
-
-  #if os(OSX)
-  let textLayerHeightRatio: CGFloat = 0.1
-  let textLayerWidthRatio: CGFloat = 0.9
-  #endif
   
   // MARK: -
   // MARK: UI Properties -
