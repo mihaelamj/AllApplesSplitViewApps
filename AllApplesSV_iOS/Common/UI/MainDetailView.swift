@@ -130,6 +130,7 @@ private extension MainDetailView {
   private func addChildSubView() {
     guard let aContentView = makeContentView(name: name) else { return }
     contentView = aContentView
+    aContentView.forcedLayer.backgroundColor = AColor.randomColor().cgColor
     addSubview(aContentView)
   }
   
@@ -224,7 +225,6 @@ private extension MainDetailView {
     guard let aContentView = contentView else { return }
     let resultRect = getContentLayerFrame()
     aContentView.frame = resultRect
-    aContentView.forcedLayer.backgroundColor = AColor.randomColor().cgColor
 //    aContentView.forcedLayer.backgroundColor = AColor.systemTeal.cgColor
   }
 }
