@@ -7,6 +7,7 @@
 
 import Foundation
 import AllApples
+import MMJSectionedDataSource
 
 #if os(iOS) || os(tvOS)
 import UIKit
