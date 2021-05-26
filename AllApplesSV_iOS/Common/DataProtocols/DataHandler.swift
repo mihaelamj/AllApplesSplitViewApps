@@ -8,6 +8,7 @@
 import Foundation
 import AllApples
 import MMJSectionedDataSource
+import AllApplesTableViewHandlers
 
 #if os(iOS) || os(tvOS)
 import UIKit
@@ -22,9 +23,9 @@ import Cocoa
 
 public class DataHandler: NSObject {
   
-  weak var tableCellHandler: TableViewCellProtocol?
+  weak var tableCellHandler: AllApplesTableViewCellProtocol?
   weak var sectionHandler: SectionedDataSource?
-  weak var delegate: ItemDelegate?
+  weak var delegate: AllApplesTableViewItemDelegate?
   
   let data = DataImplementation()
   

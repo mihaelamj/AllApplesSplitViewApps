@@ -7,6 +7,7 @@
 
 import Foundation
 import AllApples
+import AllApplesTableViewHandlers
 
 #if os(iOS) || os(tvOS)
 import UIKit
@@ -24,6 +25,11 @@ open class MainTableViewController: AViewController {
   private lazy var data: DataHandler = {
     let ds = DataHandler()
     ds.delegate = self
+    return ds
+  }()
+  
+  private lazy var handler: AllStuffHandler = {
+    let ds = AllStuffHandler()
     return ds
   }()
   
@@ -82,9 +88,9 @@ extension MainTableViewController {
 // MARK: -
 // MARK: Item Delegate -
 
-extension MainTableViewController: ItemDelegate {
+extension MainTableViewController: AllApplesTableViewItemDelegate {
   
-  func didTapOn(dataSource: Any, item: Any) {
+  public func didTapOn(dataSource: Any, item: Any) {
     guard let theItem = item as? DataItem else { return }
     
     self.title = theItem.name

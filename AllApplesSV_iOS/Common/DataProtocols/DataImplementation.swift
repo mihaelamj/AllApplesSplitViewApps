@@ -9,6 +9,7 @@ import Foundation
 import AllApples
 import MMJSectionedDataSource
 import CollectionUtil
+import AllApplesTableViewHandlers
 
 #if os(iOS) || os(tvOS)
 import UIKit
@@ -43,7 +44,7 @@ open class DataImplementation {
 // MARK: -
 // MARK: TableViewCell Stuff -
 
-extension DataImplementation: TableViewCellProtocol {
+extension DataImplementation: AllApplesTableViewCellProtocol {
   
   public var tableCellIdentifiers: [String] {
    return cellidentifiers

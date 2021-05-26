@@ -16,6 +16,16 @@
 		A90A46D62571AAF300045CA5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A46D52571AAF300045CA5 /* main.swift */; };
 		A90A471D257283DE00045CA5 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A90A471C257283DE00045CA5 /* AllApples */; };
 		A90A4721257283ED00045CA5 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A90A4720257283ED00045CA5 /* AllApples */; };
+		A9A73542265E7FB500BF3112 /* AllApplesTableViewHandlers in Frameworks */ = {isa = PBXBuildFile; productRef = A9A73541265E7FB500BF3112 /* AllApplesTableViewHandlers */; };
+		A9A73544265E7FC200BF3112 /* AllApplesTableViewHandlers in Frameworks */ = {isa = PBXBuildFile; productRef = A9A73543265E7FC200BF3112 /* AllApplesTableViewHandlers */; };
+		A9A73546265E80EA00BF3112 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A73545265E80EA00BF3112 /* Repository.swift */; };
+		A9A73547265E80EA00BF3112 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A73545265E80EA00BF3112 /* Repository.swift */; };
+		A9A73549265E819D00BF3112 /* Repository+SectionedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A73548265E819D00BF3112 /* Repository+SectionedDataSource.swift */; };
+		A9A7354A265E819D00BF3112 /* Repository+SectionedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A73548265E819D00BF3112 /* Repository+SectionedDataSource.swift */; };
+		A9A7354C265E81DB00BF3112 /* TableViewCellHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7354B265E81DB00BF3112 /* TableViewCellHandler.swift */; };
+		A9A7354D265E81DB00BF3112 /* TableViewCellHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7354B265E81DB00BF3112 /* TableViewCellHandler.swift */; };
+		A9A7354F265E846200BF3112 /* AllStuffHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7354E265E846200BF3112 /* AllStuffHandler.swift */; };
+		A9A73550265E846200BF3112 /* AllStuffHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7354E265E846200BF3112 /* AllStuffHandler.swift */; };
 		A9BF2F28265D7B84003670D5 /* CollectionUtil in Frameworks */ = {isa = PBXBuildFile; productRef = A9BF2F27265D7B84003670D5 /* CollectionUtil */; };
 		A9BF2F2A265D7B84003670D5 /* FloatingPointUtil in Frameworks */ = {isa = PBXBuildFile; productRef = A9BF2F29265D7B84003670D5 /* FloatingPointUtil */; };
 		A9BF2F2C265D7B97003670D5 /* CollectionUtil in Frameworks */ = {isa = PBXBuildFile; productRef = A9BF2F2B265D7B97003670D5 /* CollectionUtil */; };
@@ -32,12 +42,8 @@
 		A9FCC3272645753400BDF73F /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3252645753400BDF73F /* MainTableViewController.swift */; };
 		A9FCC3292645754100BDF73F /* MainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3282645754100BDF73F /* MainDetailViewController.swift */; };
 		A9FCC32A2645754100BDF73F /* MainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3282645754100BDF73F /* MainDetailViewController.swift */; };
-		A9FCC3382645785200BDF73F /* TableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3372645785200BDF73F /* TableViewCellProtocol.swift */; };
-		A9FCC3392645785200BDF73F /* TableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3372645785200BDF73F /* TableViewCellProtocol.swift */; };
 		A9FCC33B26457B2300BDF73F /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC33A26457B2300BDF73F /* DataHandler.swift */; };
 		A9FCC33C26457B2300BDF73F /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC33A26457B2300BDF73F /* DataHandler.swift */; };
-		A9FCC33E2645A60200BDF73F /* ItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC33D2645A60200BDF73F /* ItemDelegate.swift */; };
-		A9FCC33F2645A60200BDF73F /* ItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC33D2645A60200BDF73F /* ItemDelegate.swift */; };
 		A9FCC3412645C6CD00BDF73F /* DataImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3402645C6CD00BDF73F /* DataImplementation.swift */; };
 		A9FCC3422645C6CD00BDF73F /* DataImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3402645C6CD00BDF73F /* DataImplementation.swift */; };
 		A9FCC3442645CAE500BDF73F /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3432645CAE500BDF73F /* DataItem.swift */; };
@@ -59,14 +65,16 @@
 		A90A46C72571AA1600045CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A90A46C82571AA1600045CA5 /* AllApplesSV_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AllApplesSV_Mac.entitlements; sourceTree = "<group>"; };
 		A90A46D52571AAF300045CA5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A9A73545265E80EA00BF3112 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		A9A73548265E819D00BF3112 /* Repository+SectionedDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+SectionedDataSource.swift"; sourceTree = "<group>"; };
+		A9A7354B265E81DB00BF3112 /* TableViewCellHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellHandler.swift; sourceTree = "<group>"; };
+		A9A7354E265E846200BF3112 /* AllStuffHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStuffHandler.swift; sourceTree = "<group>"; };
 		A9CD1993265C35E600CF2345 /* DataItem+AViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataItem+AViewClass.swift"; sourceTree = "<group>"; };
 		A9CD1996265C380D00CF2345 /* CustomDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDetailView.swift; sourceTree = "<group>"; };
 		A9FCC3222645751D00BDF73F /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
 		A9FCC3252645753400BDF73F /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		A9FCC3282645754100BDF73F /* MainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailViewController.swift; sourceTree = "<group>"; };
-		A9FCC3372645785200BDF73F /* TableViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellProtocol.swift; sourceTree = "<group>"; };
 		A9FCC33A26457B2300BDF73F /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
-		A9FCC33D2645A60200BDF73F /* ItemDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDelegate.swift; sourceTree = "<group>"; };
 		A9FCC3402645C6CD00BDF73F /* DataImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataImplementation.swift; sourceTree = "<group>"; };
 		A9FCC3432645CAE500BDF73F /* DataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
 		A9FCC34A2646874B00BDF73F /* MainDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailView.swift; sourceTree = "<group>"; };
@@ -78,6 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9BF2F2A265D7B84003670D5 /* FloatingPointUtil in Frameworks */,
+				A9A73542265E7FB500BF3112 /* AllApplesTableViewHandlers in Frameworks */,
 				A9BF2F28265D7B84003670D5 /* CollectionUtil in Frameworks */,
 				A90A471D257283DE00045CA5 /* AllApples in Frameworks */,
 				A9BF2F31265D7BD4003670D5 /* MMJSectionedDataSource in Frameworks */,
@@ -89,6 +98,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9BF2F2E265D7B9C003670D5 /* FloatingPointUtil in Frameworks */,
+				A9A73544265E7FC200BF3112 /* AllApplesTableViewHandlers in Frameworks */,
 				A9BF2F2C265D7B97003670D5 /* CollectionUtil in Frameworks */,
 				A90A4721257283ED00045CA5 /* AllApples in Frameworks */,
 				A9BF2F33265D7BE1003670D5 /* MMJSectionedDataSource in Frameworks */,
@@ -157,6 +167,7 @@
 				A9FCC3282645754100BDF73F /* MainDetailViewController.swift */,
 				A9FCC34A2646874B00BDF73F /* MainDetailView.swift */,
 				A9CD1996265C380D00CF2345 /* CustomDetailView.swift */,
+				A9CD1993265C35E600CF2345 /* DataItem+AViewClass.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -164,9 +175,8 @@
 		A9FCC3362645775700BDF73F /* DataProtocols */ = {
 			isa = PBXGroup;
 			children = (
+				A9FCC3402645C6CD00BDF73F /* DataImplementation.swift */,
 				A9FCC33A26457B2300BDF73F /* DataHandler.swift */,
-				A9FCC3372645785200BDF73F /* TableViewCellProtocol.swift */,
-				A9FCC33D2645A60200BDF73F /* ItemDelegate.swift */,
 			);
 			path = DataProtocols;
 			sourceTree = "<group>";
@@ -175,8 +185,10 @@
 			isa = PBXGroup;
 			children = (
 				A9FCC3432645CAE500BDF73F /* DataItem.swift */,
-				A9CD1993265C35E600CF2345 /* DataItem+AViewClass.swift */,
-				A9FCC3402645C6CD00BDF73F /* DataImplementation.swift */,
+				A9A73545265E80EA00BF3112 /* Repository.swift */,
+				A9A7354E265E846200BF3112 /* AllStuffHandler.swift */,
+				A9A73548265E819D00BF3112 /* Repository+SectionedDataSource.swift */,
+				A9A7354B265E81DB00BF3112 /* TableViewCellHandler.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -212,6 +224,7 @@
 				A9BF2F27265D7B84003670D5 /* CollectionUtil */,
 				A9BF2F29265D7B84003670D5 /* FloatingPointUtil */,
 				A9BF2F30265D7BD4003670D5 /* MMJSectionedDataSource */,
+				A9A73541265E7FB500BF3112 /* AllApplesTableViewHandlers */,
 			);
 			productName = AllApplesSV_iOS;
 			productReference = A90A469C2571A9AC00045CA5 /* AllApplesSV_Mobile.app */;
@@ -235,6 +248,7 @@
 				A9BF2F2B265D7B97003670D5 /* CollectionUtil */,
 				A9BF2F2D265D7B9C003670D5 /* FloatingPointUtil */,
 				A9BF2F32265D7BE1003670D5 /* MMJSectionedDataSource */,
+				A9A73543265E7FC200BF3112 /* AllApplesTableViewHandlers */,
 			);
 			productName = AllApplesSV_Mac;
 			productReference = A90A46BC2571AA1400045CA5 /* AllApplesSV_Mac.app */;
@@ -270,6 +284,7 @@
 				A90A471B257283DE00045CA5 /* XCRemoteSwiftPackageReference "allapples" */,
 				A9BF2F26265D7B84003670D5 /* XCRemoteSwiftPackageReference "MMJUtils" */,
 				A9BF2F2F265D7BD4003670D5 /* XCRemoteSwiftPackageReference "MMJSectionedDataSource" */,
+				A9A73540265E7FB500BF3112 /* XCRemoteSwiftPackageReference "AllApplesTableViewHandlers" */,
 			);
 			productRefGroup = A90A469D2571A9AC00045CA5 /* Products */;
 			projectDirPath = "";
@@ -308,17 +323,19 @@
 			files = (
 				A9FCC3292645754100BDF73F /* MainDetailViewController.swift in Sources */,
 				A9CD1994265C35E600CF2345 /* DataItem+AViewClass.swift in Sources */,
-				A9FCC3382645785200BDF73F /* TableViewCellProtocol.swift in Sources */,
-				A9FCC33E2645A60200BDF73F /* ItemDelegate.swift in Sources */,
 				A9FCC3442645CAE500BDF73F /* DataItem.swift in Sources */,
 				A90A46A02571A9AC00045CA5 /* AppDelegate.swift in Sources */,
 				A90A46A22571A9AC00045CA5 /* SceneDelegate.swift in Sources */,
 				A9FCC3262645753400BDF73F /* MainTableViewController.swift in Sources */,
+				A9A73546265E80EA00BF3112 /* Repository.swift in Sources */,
 				A9FCC34B2646874B00BDF73F /* MainDetailView.swift in Sources */,
+				A9A73549265E819D00BF3112 /* Repository+SectionedDataSource.swift in Sources */,
+				A9A7354F265E846200BF3112 /* AllStuffHandler.swift in Sources */,
 				A9CD1997265C380D00CF2345 /* CustomDetailView.swift in Sources */,
 				A9FCC3412645C6CD00BDF73F /* DataImplementation.swift in Sources */,
 				A9FCC33B26457B2300BDF73F /* DataHandler.swift in Sources */,
 				A9FCC3232645751D00BDF73F /* MainSplitViewController.swift in Sources */,
+				A9A7354C265E81DB00BF3112 /* TableViewCellHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,17 +345,19 @@
 			files = (
 				A9FCC32A2645754100BDF73F /* MainDetailViewController.swift in Sources */,
 				A9CD1995265C35E600CF2345 /* DataItem+AViewClass.swift in Sources */,
-				A9FCC3392645785200BDF73F /* TableViewCellProtocol.swift in Sources */,
-				A9FCC33F2645A60200BDF73F /* ItemDelegate.swift in Sources */,
 				A9FCC3452645CAE500BDF73F /* DataItem.swift in Sources */,
 				A90A46BF2571AA1400045CA5 /* AppDelegate.swift in Sources */,
 				A90A46D62571AAF300045CA5 /* main.swift in Sources */,
 				A9FCC3272645753400BDF73F /* MainTableViewController.swift in Sources */,
+				A9A73547265E80EA00BF3112 /* Repository.swift in Sources */,
 				A9FCC34C2646874B00BDF73F /* MainDetailView.swift in Sources */,
+				A9A7354A265E819D00BF3112 /* Repository+SectionedDataSource.swift in Sources */,
+				A9A73550265E846200BF3112 /* AllStuffHandler.swift in Sources */,
 				A9CD1998265C380D00CF2345 /* CustomDetailView.swift in Sources */,
 				A9FCC3422645C6CD00BDF73F /* DataImplementation.swift in Sources */,
 				A9FCC33C26457B2300BDF73F /* DataHandler.swift in Sources */,
 				A9FCC3242645751D00BDF73F /* MainSplitViewController.swift in Sources */,
+				A9A7354D265E81DB00BF3112 /* TableViewCellHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +618,14 @@
 				version = 0.9.8;
 			};
 		};
+		A9A73540265E7FB500BF3112 /* XCRemoteSwiftPackageReference "AllApplesTableViewHandlers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mihaelamj/AllApplesTableViewHandlers";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 		A9BF2F26265D7B84003670D5 /* XCRemoteSwiftPackageReference "MMJUtils" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mihaelamj/MMJUtils";
@@ -627,6 +654,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A90A471B257283DE00045CA5 /* XCRemoteSwiftPackageReference "allapples" */;
 			productName = AllApples;
+		};
+		A9A73541265E7FB500BF3112 /* AllApplesTableViewHandlers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9A73540265E7FB500BF3112 /* XCRemoteSwiftPackageReference "AllApplesTableViewHandlers" */;
+			productName = AllApplesTableViewHandlers;
+		};
+		A9A73543265E7FC200BF3112 /* AllApplesTableViewHandlers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9A73540265E7FB500BF3112 /* XCRemoteSwiftPackageReference "AllApplesTableViewHandlers" */;
+			productName = AllApplesTableViewHandlers;
 		};
 		A9BF2F27265D7B84003670D5 /* CollectionUtil */ = {
 			isa = XCSwiftPackageProductDependency;
