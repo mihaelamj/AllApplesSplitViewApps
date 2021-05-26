@@ -21,8 +21,8 @@ open class MainSplitViewController: ASplitViewController {
   // MARK: -
   // MARK: Properties -
   
-  lazy var masterVC = MainTableViewController()
-  lazy var detailVC = MainDetailViewController()
+  public lazy var masterVC = MainTableViewController()
+  public lazy var detailVC = MainDetailViewController()
   
   // MARK: -
   // MARK: Init -
