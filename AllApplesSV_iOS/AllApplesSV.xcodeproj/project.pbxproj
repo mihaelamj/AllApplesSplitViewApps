@@ -24,8 +24,8 @@
 		A9A7354A265E819D00BF3112 /* Repository+SectionedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A73548265E819D00BF3112 /* Repository+SectionedDataSource.swift */; };
 		A9A7354C265E81DB00BF3112 /* TableViewCellHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7354B265E81DB00BF3112 /* TableViewCellHandler.swift */; };
 		A9A7354D265E81DB00BF3112 /* TableViewCellHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7354B265E81DB00BF3112 /* TableViewCellHandler.swift */; };
-		A9A7354F265E846200BF3112 /* AllStuffHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7354E265E846200BF3112 /* AllStuffHandler.swift */; };
-		A9A73550265E846200BF3112 /* AllStuffHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7354E265E846200BF3112 /* AllStuffHandler.swift */; };
+		A9A7354F265E846200BF3112 /* MyAllStuffHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7354E265E846200BF3112 /* MyAllStuffHandler.swift */; };
+		A9A73550265E846200BF3112 /* MyAllStuffHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7354E265E846200BF3112 /* MyAllStuffHandler.swift */; };
 		A9BF2F28265D7B84003670D5 /* CollectionUtil in Frameworks */ = {isa = PBXBuildFile; productRef = A9BF2F27265D7B84003670D5 /* CollectionUtil */; };
 		A9BF2F2A265D7B84003670D5 /* FloatingPointUtil in Frameworks */ = {isa = PBXBuildFile; productRef = A9BF2F29265D7B84003670D5 /* FloatingPointUtil */; };
 		A9BF2F2C265D7B97003670D5 /* CollectionUtil in Frameworks */ = {isa = PBXBuildFile; productRef = A9BF2F2B265D7B97003670D5 /* CollectionUtil */; };
@@ -42,10 +42,6 @@
 		A9FCC3272645753400BDF73F /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3252645753400BDF73F /* MainTableViewController.swift */; };
 		A9FCC3292645754100BDF73F /* MainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3282645754100BDF73F /* MainDetailViewController.swift */; };
 		A9FCC32A2645754100BDF73F /* MainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3282645754100BDF73F /* MainDetailViewController.swift */; };
-		A9FCC33B26457B2300BDF73F /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC33A26457B2300BDF73F /* DataHandler.swift */; };
-		A9FCC33C26457B2300BDF73F /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC33A26457B2300BDF73F /* DataHandler.swift */; };
-		A9FCC3412645C6CD00BDF73F /* DataImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3402645C6CD00BDF73F /* DataImplementation.swift */; };
-		A9FCC3422645C6CD00BDF73F /* DataImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3402645C6CD00BDF73F /* DataImplementation.swift */; };
 		A9FCC3442645CAE500BDF73F /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3432645CAE500BDF73F /* DataItem.swift */; };
 		A9FCC3452645CAE500BDF73F /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC3432645CAE500BDF73F /* DataItem.swift */; };
 		A9FCC34B2646874B00BDF73F /* MainDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FCC34A2646874B00BDF73F /* MainDetailView.swift */; };
@@ -68,14 +64,12 @@
 		A9A73545265E80EA00BF3112 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		A9A73548265E819D00BF3112 /* Repository+SectionedDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+SectionedDataSource.swift"; sourceTree = "<group>"; };
 		A9A7354B265E81DB00BF3112 /* TableViewCellHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellHandler.swift; sourceTree = "<group>"; };
-		A9A7354E265E846200BF3112 /* AllStuffHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStuffHandler.swift; sourceTree = "<group>"; };
+		A9A7354E265E846200BF3112 /* MyAllStuffHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAllStuffHandler.swift; sourceTree = "<group>"; };
 		A9CD1993265C35E600CF2345 /* DataItem+AViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataItem+AViewClass.swift"; sourceTree = "<group>"; };
 		A9CD1996265C380D00CF2345 /* CustomDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDetailView.swift; sourceTree = "<group>"; };
 		A9FCC3222645751D00BDF73F /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
 		A9FCC3252645753400BDF73F /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		A9FCC3282645754100BDF73F /* MainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailViewController.swift; sourceTree = "<group>"; };
-		A9FCC33A26457B2300BDF73F /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
-		A9FCC3402645C6CD00BDF73F /* DataImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataImplementation.swift; sourceTree = "<group>"; };
 		A9FCC3432645CAE500BDF73F /* DataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
 		A9FCC34A2646874B00BDF73F /* MainDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,21 +166,12 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		A9FCC3362645775700BDF73F /* DataProtocols */ = {
-			isa = PBXGroup;
-			children = (
-				A9FCC3402645C6CD00BDF73F /* DataImplementation.swift */,
-				A9FCC33A26457B2300BDF73F /* DataHandler.swift */,
-			);
-			path = DataProtocols;
-			sourceTree = "<group>";
-		};
 		A9FCC3462645CAEA00BDF73F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				A9A7354E265E846200BF3112 /* MyAllStuffHandler.swift */,
 				A9FCC3432645CAE500BDF73F /* DataItem.swift */,
 				A9A73545265E80EA00BF3112 /* Repository.swift */,
-				A9A7354E265E846200BF3112 /* AllStuffHandler.swift */,
 				A9A73548265E819D00BF3112 /* Repository+SectionedDataSource.swift */,
 				A9A7354B265E81DB00BF3112 /* TableViewCellHandler.swift */,
 			);
@@ -198,7 +183,6 @@
 			children = (
 				A9FCC3352645774000BDF73F /* UI */,
 				A9FCC3462645CAEA00BDF73F /* Data */,
-				A9FCC3362645775700BDF73F /* DataProtocols */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -330,10 +314,8 @@
 				A9A73546265E80EA00BF3112 /* Repository.swift in Sources */,
 				A9FCC34B2646874B00BDF73F /* MainDetailView.swift in Sources */,
 				A9A73549265E819D00BF3112 /* Repository+SectionedDataSource.swift in Sources */,
-				A9A7354F265E846200BF3112 /* AllStuffHandler.swift in Sources */,
+				A9A7354F265E846200BF3112 /* MyAllStuffHandler.swift in Sources */,
 				A9CD1997265C380D00CF2345 /* CustomDetailView.swift in Sources */,
-				A9FCC3412645C6CD00BDF73F /* DataImplementation.swift in Sources */,
-				A9FCC33B26457B2300BDF73F /* DataHandler.swift in Sources */,
 				A9FCC3232645751D00BDF73F /* MainSplitViewController.swift in Sources */,
 				A9A7354C265E81DB00BF3112 /* TableViewCellHandler.swift in Sources */,
 			);
@@ -352,10 +334,8 @@
 				A9A73547265E80EA00BF3112 /* Repository.swift in Sources */,
 				A9FCC34C2646874B00BDF73F /* MainDetailView.swift in Sources */,
 				A9A7354A265E819D00BF3112 /* Repository+SectionedDataSource.swift in Sources */,
-				A9A73550265E846200BF3112 /* AllStuffHandler.swift in Sources */,
+				A9A73550265E846200BF3112 /* MyAllStuffHandler.swift in Sources */,
 				A9CD1998265C380D00CF2345 /* CustomDetailView.swift in Sources */,
-				A9FCC3422645C6CD00BDF73F /* DataImplementation.swift in Sources */,
-				A9FCC33C26457B2300BDF73F /* DataHandler.swift in Sources */,
 				A9FCC3242645751D00BDF73F /* MainSplitViewController.swift in Sources */,
 				A9A7354D265E81DB00BF3112 /* TableViewCellHandler.swift in Sources */,
 			);

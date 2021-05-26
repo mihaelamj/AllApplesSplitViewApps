@@ -22,15 +22,10 @@ open class MainTableViewController: AViewController {
   // MARK: -
   // MARK: Data Properties -
   
-  private lazy var data: DataHandler = {
-    let ds = DataHandler()
-    ds.delegate = self
-    return ds
-  }()
-  
-  private lazy var handler: AllStuffHandler = {
-    let ds = AllStuffHandler()
-    return ds
+  private lazy var handler: MyAllStuffHandler = {
+    let ash = MyAllStuffHandler(itemDelegate: self)
+    debugPrint("Created handler!")
+    return ash
   }()
   
   // MARK: -
@@ -38,9 +33,6 @@ open class MainTableViewController: AViewController {
   
   private lazy var tableView: ATableView = {
     let tv = ATableView()
-    
-    tv.dataSource = data
-    tv.delegate = data
     
     #if os(iOS) || os(tvOS)
     tv.rowHeight = 50.0
@@ -63,7 +55,12 @@ open class MainTableViewController: AViewController {
   
   open override func viewDidLoad() {
     super.viewDidLoad()
-    data.registerReusableViews(with: tableView)
+
+    handler.registrant.registerReusableViews(with: tableView)
+    
+    tableView.dataSource = handler.tvDataSource
+    tableView.delegate = handler.tvDelegate
+    
     tableView.reloadData()
   }
   
@@ -79,10 +76,9 @@ extension MainTableViewController {
   }
   
   func showFirstItem(detail: MainDetailViewController) {
-    guard let firstItem = data.data.items.first else { return }
+    guard let firstItem = handler.repo.items.first else { return }
     showItem(firstItem, detail: detail)
   }
-
 }
 
 // MARK: -
